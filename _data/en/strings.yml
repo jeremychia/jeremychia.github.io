@@ -5,8 +5,7 @@ home:
   projects_title: "Last Projects"
   see_more_projects: "See More Projects ->"
 footer:
-  title: "Let's keep in touch!"
-  description: " Find me on any of these platforms. "
+  call_to_action: "Let's connect:"
   pages: Pages
 blog:
   read_more: "Read More ->"

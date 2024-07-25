@@ -5,8 +5,7 @@ home:
   projects_title: "Últimos Proyectos"
   see_more_projects: "Ver Más Proyectos ->"
 footer:
-  title: "Mantengamosnos en contacto!"
-  description: "Encuéntrame en cualquiera de estas plataformas:"
+  call_to_action: "Conectemos:"
   pages: Páginas
 
 blog:
