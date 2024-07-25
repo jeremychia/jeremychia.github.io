@@ -1,25 +1,22 @@
-title: Jekyll Theme
+title: Jeremy Chia
 logo: /assets/images/logo.avif
-baseurl: /awesome-jekyll-theme
+baseurl: /jeremychia/
 
 collections:
   projects:
     output: true
 
 rrss:
-  email: "example@example.cl"
-  github: "https://github.com/"
-  telegram: "https://t.me/"
-  stackoverflow: "https://stackoverflow.com"
-  discord: "https://discord.com/"
-  mastodon: "https://lile.cl/"
+  email: "jeremyjchia@gmail.com"
+  github: "https://github.com/jeremychia/"
+  linkedin: "https://www.linkedin.com/in/jjchia/"
 
 plugins:
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-polyglot
 
-languages: ["en", "es"]
+languages: ["en"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
@@ -35,5 +32,4 @@ defaults:
   - scope:
       path: ""
     values:
-      author: "Mr. Hyde"
-      time: "2 min"
+      author: "Jeremy Chia"
