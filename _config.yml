@@ -19,7 +19,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-polyglot
 
-languages: ["en"]
+languages: ["en", "es"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
