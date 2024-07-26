@@ -20,29 +20,6 @@ layout: default
   </div>
 </section>
 
-{% if site.posts.size > 0 %}
-<section id="blog" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
-  <div class="py-16">
-    <h2 class="text-3xl font-bold text-center md:text-left">
-      {{ site.data[site.active_lang].strings.home.blog_title | default:
-      site.data['en'].strings.home.blog_title}}
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
-      {% for post in site.posts limit:3 %}
-      {% include post_card.html post=post %}
-      {% endfor %}
-    </div>
-    <div class="pt-4 text-center">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/blog' | relative_url }}">
-        {{ site.data[site.active_lang].strings.home.see_more_posts | default:
-        site.data['en'].strings.home.see_more_posts}}
-      </a>
-    </div>
-  </div>
-</section>
-{% endif %}
-
-
 {% if site.projects.size > 0 %}
 <section id="projects" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
   <div class="py-16">
@@ -60,6 +37,28 @@ layout: default
         href="{{'/projects' | relative_url }}">
         {{ site.data[site.active_lang].strings.home.see_more_projects | default:
         site.data['en'].strings.home.see_more_projects }}
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if site.posts.size > 0 %}
+<section id="blog" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+  <div class="py-16">
+    <h2 class="text-3xl font-bold text-center md:text-left">
+      {{ site.data[site.active_lang].strings.home.blog_title | default:
+      site.data['en'].strings.home.blog_title}}
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
+      {% for post in site.posts limit:3 %}
+      {% include post_card.html post=post %}
+      {% endfor %}
+    </div>
+    <div class="pt-4 text-center">
+      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/blog' | relative_url }}">
+        {{ site.data[site.active_lang].strings.home.see_more_posts | default:
+        site.data['en'].strings.home.see_more_posts}}
       </a>
     </div>
   </div>

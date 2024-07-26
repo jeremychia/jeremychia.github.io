@@ -1,12 +1,17 @@
 ---
 layout: project
-title: Awesome Theme
-image: 'https://picsum.photos/900/400'
-category: Theme
+title: Singapore Parliament Speeches
+image: 'https://singapore-parliament-speeches.streamlit.app/~/+/media/a9154e7ad4df335fd2b0283cfbc0e07b6e633c7798a31979101e5028.png'
+category: Datasets
 tags:
-  - tailwindcss
-  - html
+  - politics
+  - python
+  - dbt
+  - streamlit
 ---
-Nunc eleifend dolor vitae lorem dictum rhoncus. Proin id pulvinar turpis, et eleifend quam.
 
-Nulla odio nisl, sagittis et tortor non, aliquam vestibulum neque. Etiam eu venenatis sem. Morbi ex turpis, dictum sit amet commodo eget, egestas sed felis. In a purus et lacus mollis sagittis. Vivamus eu lectus non elit iaculis vehicula nec id tellus. Suspendisse blandit blandit risus a venenatis. Pellentesque sit amet lorem eu mi bibendum blandit quis sit amet eros. Sed lobortis sagittis tincidunt. Suspendisse pellentesque velit enim, sit amet auctor odio hendrerit sed. Aenean vestibulum metus in augue viverra, non consequat risus finibus. Cras eget bibendum odio. Phasellus eget ligula at sem vulputate eleifend a quis dolor. Pellentesque nibh ligula, hendrerit nec vulputate quis, pulvinar a mi. Cras condimentum eleifend erat quis vehicula.
+Together with friends, in consultation with researchers and members of civic society, I've put together a pipeline for scrapping and modelling data from the Singapore Parliament. This was driven by a desire to make parliamentary data more accessible for Singaporeans.
+
+* [Data Extraction using Python](https://www.github.com/jeremychia/singapore-parliament-speeches)
+* [Data Transformation with dbt](https://www.github.com/jeremychia/singapore-parliament-speeches-dbt)
+* [Data Visualisation on Streamlit](https://www.github.com/jeremychia/singapore-parliament-speeches-streamlit)

@@ -1,9 +1,9 @@
 home:
-  contact_me: "If bouncing ideas around and building for change is your thing too, let's connect:"
-  blog_title: "Blog: Last Posts"
-  see_more_posts: "See More Posts ->"
-  projects_title: "Last Projects"
-  see_more_projects: "See More Projects ->"
+  contact_me: "If building for change is your thing too, let's connect:"
+  blog_title: "Blog: Latest Posts"
+  see_more_posts: "Other Posts"
+  projects_title: "Recent Projects"
+  see_more_projects: "Other Projects"
 footer:
   call_to_action: "Let's connect:"
   pages: Pages
