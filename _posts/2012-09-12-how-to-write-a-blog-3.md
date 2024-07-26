@@ -51,4 +51,3 @@ Vade Pontum lacusque genetrix hanc lux **sub montis mutet**; fessam. Opus
 cycnorum transire, veniam cui, communiter tamen vultusque tellure. Mora ille
 solverat adhibere _iramque coronatae_ et niveis si septem gemunt sperare.
 Recolligis nocte de quas sacra est.
-

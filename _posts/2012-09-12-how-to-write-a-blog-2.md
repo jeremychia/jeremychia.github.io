@@ -57,4 +57,3 @@ Et quid, Austri, viscera artes salutifer oraque sinistrae incursus. Pollentibus
 sanior olivi fuissem iterum videtur; et quid fuerit secabant vincere asperitas
 tu ira fidibusque formae Tonanti, ebur. Marmor poenam nullos Trachasque
 **antiquo caelatus nos** senem pugnare.
-

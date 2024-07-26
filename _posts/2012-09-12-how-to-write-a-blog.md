@@ -42,4 +42,3 @@ ingreditur, mutasse quo.
 Nec fortuna cupiunt parabant nec pedes nulloque, imitante notas comitum, vix
 levi foramine, armo mei. Quam stridore munus condidit, ex est cum nam eas morer
 cremarat zonae totidem tuis: Andraemon effigiem superas posse!
-

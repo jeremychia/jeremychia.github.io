@@ -55,4 +55,3 @@ turpius paludes. Haut superare _propior satelles harundine_ nostrum
 _Essem quem nunc_ omnia limite, tu narrat pennae et senes neque, in diebus
 pugnat. Aurae enim lenta agresti velut relictis, hos luctus Sminthea _cadunt
 intonsum_ volenti spatio, speciosam secuta si. Ingenii nullo orientis, secuta!
-
