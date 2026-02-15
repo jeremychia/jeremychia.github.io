@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/monokai.css' | relative_url }}">
+<div class="container mx-auto px-4">
+  <div id="publication" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
+    <p class="font-mulish text-gray-500 mb-2">{{page.venue}}</p>
+    <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
+    
+    <p class="text-gray-600 mt-4">{{page.authors}}</p>
+
+    <div class="my-4">
+      {% for tag in page.tags %}
+      <span class="font-mulish text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">#{{ tag | xml_escape }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="my-8">
+      {{content}}
+    </div>
+
+    {% if page.link %}
+    <div class="my-8">
+      <a href="{{page.link}}" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 no-underline">
+        Read the Paper →
+      </a>
+    </div>
+    {% endif %}
+
+    <div class="mx-auto py-8">
+      {% include sharing.html %}
+    </div>
+
+  </div>
+</div>

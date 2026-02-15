@@ -1,0 +1,15 @@
+<div class="rounded-lg hover:bg-gray-50 p-8 shadow">
+  <a href="{{include.talk.url | relative_url}}">
+    <img src="{{include.talk.image | relative_url}}" alt="{{include.talk.title}}" class="object-cover w-full h-60 rounded" />
+    <p class="font-mulish text-gray-500 mt-6 mb-2">{{include.talk.venue | upcase}}</p>
+    <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">{{include.talk.title}}</h2>
+    <div class="font-mulish text-gray-600">
+      {{include.talk.excerpt}}
+    </div>
+    <div class="my-4">
+      {% for tag in include.talk.tags %}
+      <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
+      {% endfor %}
+    </div>
+  </a>
+</div>

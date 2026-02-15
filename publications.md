@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Speaking
+title: Publications
 nav: true
 footer: true
-description: Conference talks on data engineering, risk management, and civic tech.
+description: Peer-reviewed research on data, finance, and sustainability.
 ---
 
 <section class="container mx-auto px-4 py-16">
@@ -13,8 +13,8 @@ description: Conference talks on data engineering, risk management, and civic te
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-    {% for talk in site.speaking %}
-    {% include speaking_card.html talk=talk %}
+    {% for publication in site.publications %}
+    {% include publication_card.html publication=publication %}
     {% endfor %}
   </div>
 </section>

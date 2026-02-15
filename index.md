@@ -1,70 +1,66 @@
 ---
 layout: home
-title: Analytics Engineer, Chartered Accountant
+title: Senior Analytics Engineer | Chartered Accountant
 description: >-
-  Accountant turned Analytics Engineer.
+  Chartered Accountant turned Analytics Engineer. Building data systems for finance teams.
 image: /assets/images/jeremy-batik-brown-square.jpg
 main_content: >
-    Hi, I'm Jeremy 👷, an **Accountant** turned **Analytics Engineer**. Berlin-based 🇩🇪, from Singapore 🇸🇬.
+    Hi, I'm Jeremy 👋 — a **Chartered Accountant** turned **Analytics Engineer**.
 
 
-    I use data and finance to drive social impact and growth.
+    I build data systems for finance teams. Berlin-based 🇩🇪, from Singapore 🇸🇬.
 footer: false
 permalink: /
 ---
 
 ## What I do
 
-I build data products for finance teams — pipelines, dashboards, controls — that help people close books faster, catch errors earlier, and make better decisions.
+I work at the intersection of data engineering and finance — building pipelines, dashboards, and controls that help teams close books faster, catch errors earlier, and make better decisions.
 
-My goal:
+My background in accounting helps me understand what finance teams actually need. My engineering skills help me build it.
 
-1. 🔊 Reduce information asymmetry.
-2. 📊 Enable impact through self-driven analysis.
-3. 🚀 Remain performant - cost-effective, ease-of-use, and trusted.
-
-**Now:** Senior Analytics Engineer @ Vinted (dbt, Scala, BigQuery)
-
-**Before:** Tourlane · LucaNet · Keppel · NTU Accountancy
+**Currently:** Senior Analytics Engineer @ Vinted
 
 ---
 
-## Selected work
+## Work
 
-**Vinted** — Built a risk management framework that caught €1.6M in carrier overcharges. Reduced misstatement risk from €40M to €4M.
+Some projects I've been part of:
 
-**Tourlane** — Automated month-end reporting, saving 5 FTE days monthly. Improved data pipeline SLA from 88% to 97%.
-
-**LucaNet** — Led 11 finance transformation projects for listed companies across APAC.
-
----
-
-## Community
-
-**Soap Cycling** — Board Member since 2018. Led Singapore expansion, managed 30 interns, raised HK$90k.
-
-**ReDI School** — Taught Python and Data Analytics to 60 students over 3 semesters (2023–2025).
+| Where | What we built | What happened |
+|-------|---------------|---------------|
+| **Vinted** | Risk management framework for carrier billing | €1.6M in overcharges caught |
+| **Vinted** | Testing framework with materiality thresholds | Misstatement risk down from €40M to €4M |
+| **Tourlane** | Automated finance reporting pipeline | 5 FTE days/month freed up |
+| **LucaNet** | Finance transformation for APAC listed companies | 11 projects delivered |
 
 ---
 
 ## Education
 
-**ESCP Business School** — MSc Big Data (Valedictorian, Best Thesis)
-
-**NTU Singapore** — Bachelor of Accountancy (Highest Distinction)
+- **ESCP Business School** — MSc Big Data and Business Analytics
+- **NTU Singapore** — Bachelor of Accountancy (Highest Distinction)
 
 ---
 
-## Tech stack
+## Tools I use
 
-**Data:** dbt · SQL · BigQuery · Snowflake · Scala · Apache Spark
+**Data:** dbt · SQL · BigQuery · Snowflake · Scala · Spark
 
 **BI:** Looker · Tableau · Power BI
 
-**Other:** Python · R · Knime · Dataiku · UiPath
+**Other:** Python · R · UiPath
 
 ---
 
 ## Certifications
 
-Chartered Global Management Accountant (CGMA) · Microsoft Data Analyst Associate · LucaNet Certified Professional
+- Chartered Global Management Accountant (CGMA)
+- Microsoft Data Analyst Associate
+
+---
+
+## Outside work
+
+- **Soap Cycling** — Board Member since 2018. We recycle hotel soap for communities in need.
+- **ReDI School** — Taught Python and SQL to refugees and migrants in Berlin (2023–2025).
