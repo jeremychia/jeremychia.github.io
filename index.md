@@ -68,11 +68,3 @@ My goal:
 ## Certifications
 
 Chartered Global Management Accountant (CGMA) · Microsoft Data Analyst Associate · LucaNet Certified Professional
-
----
-
-## Speaking & Publications
-
-I've spoken at Forward Data Conference and MDS Fest, and published peer-reviewed research on NLP and machine learning in finance.
-
-[See talks and publications →](/speaking)
