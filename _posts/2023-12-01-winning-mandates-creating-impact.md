@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Winning mandates and creating impact - building a case for finance transformation'
-image: 'https://media.licdn.com/dms/image/D4E12AQHXNNtfpulKGw/article-cover_image-shrink_720_1280/0/1701421696853?e=1727308800&v=beta&t=3uCfxc9-4tAlJkl7_zANo6edQhaYlm4YVJOku2HCYUM'
+image: '/assets/images/posts/winning-mandates.png'
 category: finance transformation
 ---
 

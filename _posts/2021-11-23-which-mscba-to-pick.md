@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Business Analytics Masters (MScBA/MBAn): Which school to pick?'
-image: 'https://media.licdn.com/dms/image/C4D12AQGVTdbNeRgYLA/article-cover_image-shrink_720_1280/0/1637616748937?e=1727308800&v=beta&t=ffzYi2NP9UZc3EAMt7CCAcGpeinhqb7VniGPEY_1WyA'
+image: '/assets/images/posts/masters-msba.png'
 category: analysis
 ---
 

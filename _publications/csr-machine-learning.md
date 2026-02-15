@@ -3,7 +3,6 @@ layout: publication
 title: Machine Learning-Based Corporate Social Responsibility Prediction
 venue: IEEE CIS-RAM 2019
 year: 2019
-image: /assets/images/publications/ieee-2019.png
 link: https://ieeexplore.ieee.org/document/9095846
 authors: "Teoh, T. T., Heng, Q. K., Chia, J. J., Shie, J. M., Liaw, S. W., Yang, M., & Nguwi, Y. Y."
 tags:

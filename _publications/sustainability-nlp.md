@@ -3,7 +3,6 @@ layout: publication
 title: Impact of Sustainability Disclosures on Financial Performance
 venue: HICSS 2024
 year: 2024
-image: /assets/images/publications/hicss-2024.png
 link: https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/291ef876-aa37-4fd1-ba86-ac44882cf739/content
 authors: "Lui, G., Chia, J., & Shum, C."
 tags:

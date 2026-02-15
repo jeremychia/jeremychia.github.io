@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Singapore Parliament Speeches
-image: 'https://singapore-parliament-speeches.streamlit.app/~/+/media/a9154e7ad4df335fd2b0283cfbc0e07b6e633c7798a31979101e5028.png'
+image: '/assets/images/projects/parlehmate.png'
 category: Datasets
 tags:
   - politics
