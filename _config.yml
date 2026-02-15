@@ -1,6 +1,11 @@
 title: Jeremy Chia
+description: "Senior Analytics Engineer & Chartered Accountant. Building data systems where financial precision meets engineering scale."
 logo: /assets/images/anime_character_kitti_ai.png
 baseurl: jeremychia
+
+author:
+  name: "Jeremy Chia"
+  bio: "Senior Analytics Engineer @ Vinted | Chartered Accountant | ESCP Valedictorian | Berlin 🇩🇪"
 
 collections:
   projects:

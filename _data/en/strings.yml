@@ -1,12 +1,12 @@
 home:
-  contact_me: "If building for change is your thing too, let's connect:"
-  blog_title: "Blog: Latest Posts"
-  see_more_posts: "Other Posts"
-  projects_title: "Recent Projects"
-  see_more_projects: "Other Projects"
+  contact_me: "Open to discussing data, finance, or building for impact:"
+  blog_title: "Writing"
+  see_more_posts: "More Posts →"
+  projects_title: "Projects"
+  see_more_projects: "More Projects →"
 footer:
   call_to_action: "Let's connect:"
   pages: Pages
 blog:
-  read_more: "Read More ->"
+  read_more: "Read More →"
   more_articles: "More Posts"

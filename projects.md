@@ -3,5 +3,5 @@ layout: projects
 title: Projects
 nav: true
 footer: true
-description: These are example projects in the awesome jekyll theme
+description: Open-source projects, data pipelines, and tools I've built.
 ---
