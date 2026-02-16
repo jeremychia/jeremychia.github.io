@@ -1,18 +1,19 @@
 {%- assign current_page_url = page.url | relative_url -%}
-<nav class="absolute top-0 left-0 right-0 flex w-full flex-wrap items-center justify-between py-4">
-  <div class="flex w-full flex-wrap items-center justify-between px-5">
-    <a class="flex" href="{{site.baseurl}}/" aria-label="Jeremy Chia - Analytics Engineer, Chartered Accountant">
-      <img src="{{site.logo | relative_url}}" alt="webpage logo" class="block h-8 w-auto sm:rounded-full">
-      <p class="pl-4 hidden md:block text-lg font-bold">{{site.title}} <span
-          class="text-mulish text-sm font-normal">~{{page.url}}</span>
-      </p>
+<nav class="fixed top-0 left-0 right-0 z-50 flex w-full flex-wrap items-center justify-between py-4 backdrop-blur-md bg-white/80 border-b border-gray-100/50">
+  <div class="flex w-full flex-wrap items-center justify-between px-6">
+    <a class="flex items-center gap-3 group" href="{{site.baseurl}}/" aria-label="Jeremy Chia - Analytics Engineer, Chartered Accountant">
+      <img src="{{site.logo | relative_url}}" alt="webpage logo" class="block h-9 w-9 rounded-full ring-2 ring-gray-100 transition-all duration-300 group-hover:ring-sky-200">
+      <div class="hidden md:block">
+        <p class="text-lg font-bold text-gray-900">{{site.title}}</p>
+        <p class="text-xs text-gray-400 font-mono">~{{page.url}}</p>
+      </div>
     </a>
 
-    <div class="flex divide-x">
+    <div class="flex items-center gap-1">
       {% for page in site.pages %}
       {% if page.nav %}
-      <div><a class="px-4 hover:text-sky-400 {% if page.url == current_page_url %}font-bold{% endif %}"
-          href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a></div>
+      <a class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 {% if page.url == current_page_url %}bg-gray-900 text-white{% else %}text-gray-600 hover:text-gray-900 hover:bg-gray-100{% endif %}"
+          href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a>
       {% endif%}
       {% endfor %}
 

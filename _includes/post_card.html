@@ -1,23 +1,24 @@
-<div class="flex flex-col justify-between">
-  <div class="flex flex-col justify-between max-w-lg">
-    <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
-      <div class="hover:opacity-90 transition duration-300 w-full h-60 bg-cover bg-center"
-        style="background-image: url('{{post.image}}')">
+<div class="group flex flex-col justify-between h-full">
+  <div class="flex flex-col justify-between">
+    <a href="{{include.post.url | relative_url}}" aria-label="Post Url" class="block">
+      <div class="relative overflow-hidden rounded-xl">
+        <div class="transition-all duration-500 w-full h-48 bg-cover bg-center group-hover:scale-105"
+          style="background-image: url('{{post.image}}')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
     </a>
-    <div class="pt-6">
+    <div class="pt-5">
       <a href="{{site.url}}{{site.baseurl}}/category/{{include.post.categories[0] | replace: ' ', '-'| downcase}}"
         aria-label="Category {{include.post.categories[0]}} url"
-        class="font-mulish text-sm hover:text-sky-400 text-gray-600">
+        class="font-mulish text-xs font-semibold tracking-wider text-sky-600 hover:text-sky-500 transition-colors">
         {{ include.post.categories[0] | upcase }}
       </a>
     </div>
     <a href="{{include.post.url | relative_url}}" aria-label="Post Url">
-      <h2 class="hover:underline decoration-2 underline-offset-2 font-semibold text-2xl text-gray-800 pt-6">{{
-        include.post.title }}</h2>
+      <h2 class="font-bold text-xl text-gray-900 pt-3 line-clamp-2 group-hover:text-sky-600 transition-colors duration-300">{{include.post.title}}</h2>
     </a>
   </div>
-  <span class="text-sm text-gray-500 pt-6">
+  <span class="text-sm text-gray-400 pt-4 font-medium">
     {{ include.post.date | date: "%-d %B %Y" }}
   </span>
 </div>
