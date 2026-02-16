@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Singapore Parliament Speeches
-image: '/assets/images/projects/parlehmate.png'
-category: Datasets
+image: "/assets/images/projects/parlehmate.png"
+category: Data Pipeline
 featured: true
 tags:
   - politics

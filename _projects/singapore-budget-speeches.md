@@ -2,6 +2,12 @@
 layout: project
 title: "Singapore Budget Speeches Analysis"
 image: "/assets/images/main.avif"
+category: Analysis
+tags:
+  - politics
+  - nlp
+  - python
+  - data-analysis
 links:
   - title: GitHub
     url: https://github.com/parleh-mate/singapore-budget-speeches
