@@ -3,6 +3,7 @@ layout: project
 title: Singapore Parliament Speeches
 image: '/assets/images/projects/parlehmate.png'
 category: Datasets
+featured: true
 tags:
   - politics
   - python
