@@ -13,8 +13,8 @@ description: Conference talks on data engineering, risk management, and civic te
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-    {% for talk in site.speaking %}
-    {% include talk_card.html talk=talk %}
+    {% for speaking in site.speaking %}
+    {% include speaking_card.html speaking=speaking %}
     {% endfor %}
   </div>
 </section>
