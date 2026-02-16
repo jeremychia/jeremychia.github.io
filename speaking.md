@@ -2,6 +2,7 @@
 layout: default
 title: Speaking
 nav: true
+nav_order: 2
 footer: true
 description: Conference talks on data engineering, risk management, and civic tech.
 ---

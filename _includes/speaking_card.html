@@ -6,7 +6,7 @@
     <div class="font-mulish text-gray-600 flex-grow">
       {{include.speaking.excerpt}}
     </div>
-    <div class="mt-4 flex flex-wrap gap-3">
+    <div class="mt-6 flex flex-wrap gap-4">
       {% for tag in include.speaking.tags %}
       <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
       {% endfor %}

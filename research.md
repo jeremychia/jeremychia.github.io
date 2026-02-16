@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Publications
+title: Research
 nav: true
+nav_order: 3
 footer: true
 description: Peer-reviewed research on data, finance, and sustainability.
 ---

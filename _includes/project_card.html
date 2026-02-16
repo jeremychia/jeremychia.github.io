@@ -1,4 +1,4 @@
-<div class="rounded-lg hover:bg-gray-50 p-6 shadow h-full flex flex-col">
+<div class="rounded-lg hover:bg-gray-50 p-8 shadow h-full flex flex-col">
   <a href="{{include.project.url | relative_url}}" class="flex flex-col h-full">
     <img src="{{include.project.image | relative_url}}" alt="image" class="object-cover w-full h-48 rounded" />
     <p class="font-mulish text-gray-500 mt-4 mb-2 text-sm">{{include.project.category | upcase}}</p>
@@ -6,7 +6,7 @@
     <div class="font-mulish text-gray-600 line-clamp-2 flex-grow">
       {{include.project.excerpt}}
     </div>
-    <div class="mt-4 flex flex-wrap gap-3">
+    <div class="mt-6 flex flex-wrap gap-4">
       {% for tag in include.project.tags %}
       <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
       {% endfor %}

@@ -2,12 +2,17 @@ home:
   contact_me: "歡迎交流數據工程、財務分析、或者如何創造影響力："
   blog_title: "文章"
   see_more_posts: "更多文章 →"
-  projects_title: "項目作品"
-  see_more_projects: "更多項目 →"
-  speaking_title: "演講分享"
-  see_more_speaking: "全部演講 →"
-  publications_title: "學術發表"
-  see_more_publications: "全部發表 →"
+  projects_title: "作品"
+  see_more_projects: "更多作品 →"
+  speaking_title: "演講"
+  see_more_speaking: "更多演講 →"
+  publications_title: "研究"
+  see_more_publications: "更多研究 →"
+nav:
+  projects: "作品"
+  speaking: "演講"
+  research: "研究"
+  blog: "文章"
 footer:
   call_to_action: "聯繫我："
   pages: 頁面導覽

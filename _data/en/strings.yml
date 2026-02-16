@@ -1,13 +1,18 @@
 home:
   contact_me: "Open to discussing data, finance, or building for impact:"
   blog_title: "Writing"
-  see_more_posts: "More Posts →"
-  projects_title: "Projects"
-  see_more_projects: "More Projects →"
-  speaking_title: "Speaking"
-  see_more_speaking: "All Talks →"
-  publications_title: "Publications"
-  see_more_publications: "All Publications →"
+  see_more_posts: "More Writing →"
+  projects_title: "Work"
+  see_more_projects: "More Work →"
+  speaking_title: "Talks"
+  see_more_speaking: "More Talks →"
+  publications_title: "Research"
+  see_more_publications: "More Research →"
+nav:
+  projects: "Work"
+  speaking: "Talks"
+  research: "Research"
+  blog: "Writing"
 footer:
   call_to_action: "Let's connect:"
   pages: Pages
