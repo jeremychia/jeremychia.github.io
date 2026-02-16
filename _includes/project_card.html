@@ -6,7 +6,7 @@
     <div class="font-mulish text-gray-600 line-clamp-2 flex-grow">
       {{include.project.excerpt}}
     </div>
-    <div class="mt-4 flex flex-wrap gap-2">
+    <div class="mt-4 flex flex-wrap gap-3">
       {% for tag in include.project.tags %}
       <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
       {% endfor %}
