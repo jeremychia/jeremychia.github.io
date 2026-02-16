@@ -1,0 +1,19 @@
+<div class="rounded-lg hover:bg-gray-50 p-8 shadow h-full flex flex-col">
+  <a href="{{include.item.url | relative_url}}" class="flex flex-col h-full">
+    {% if include.item.image %}
+    <img src="{{include.item.image | relative_url}}" alt="{{include.item.title}}" class="object-cover w-full h-48 rounded" />
+    {% endif %}
+    <p class="font-mulish text-gray-500 {% if include.item.image %}mt-4{% endif %} mb-2 text-sm">{{include.item.category | default: include.item.venue | upcase}}</p>
+    <h2 class="text-xl hover:underline font-bold my-2 text-gray-800 line-clamp-2">{{include.item.title}}</h2>
+    <div class="font-mulish text-sm text-gray-600 line-clamp-2 flex-grow">
+      {{include.item.excerpt}}
+    </div>
+    {% if include.item.tags %}
+    <div class="mt-6 flex flex-wrap">
+      {% for tag in include.item.tags %}
+      <span class="font-mulish text-sm text-gray-500" style="margin-right: 0.5rem;">#{{ tag | xml_escape }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </a>
+</div>

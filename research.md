@@ -15,7 +15,7 @@ description: Peer-reviewed research on data, finance, and sustainability.
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
     {% for publication in site.publications %}
-    {% include publication_card.html publication=publication %}
+    {% include item_card.html item=publication %}
     {% endfor %}
   </div>
 </section>
