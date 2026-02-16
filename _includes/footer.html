@@ -6,8 +6,7 @@
     <div class="flex flex-wrap text-left">
       <div class="w-full md:w-6/12 md:px-4">
         <p class="font-mulish text-lg dark:text-zinc-300 mt-2 mb-2">
-          {{ site.data[site.active_lang].strings.footer.call_to_action | default:
-          site.data['en'].strings.footer.call_to_action}}
+          {% include t.html key="footer.call_to_action" %}
         </p>
         {% include contact_channels.html %}
       </div>
@@ -15,7 +14,7 @@
         <div class="flex flex-wrap items-top mb-6">
           <div class="w-full lg:w-4/12 md:px-4 ml-auto">
             <span class="text-lg block text-gray-800 mb-2">
-              {{ site.data[site.active_lang].strings.footer.pages | default: site.data['en'].strings.footer.pages}}
+              {% include t.html key="footer.pages" %}
             </span>
             <ul>
               {% for page in site.pages %}

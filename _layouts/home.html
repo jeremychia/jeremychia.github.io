@@ -13,7 +13,7 @@ layout: default
     </div>
 
     <p class="mt-4 ">
-      {{ site.data[site.active_lang].strings.home.contact_me | default: site.data['en'].strings.home.contact_me}}
+      {% include t.html key="home.contact_me" %}
     </p>
 
     {%include contact_channels.html %}
@@ -21,75 +21,39 @@ layout: default
 </section>
 
 {% if site.projects.size > 0 %}
-<section id="projects" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
-  <div class="py-16">
-    <h2 class="text-3xl font-bold text-center md:text-left">
-      {{ site.data[site.active_lang].strings.home.projects_title | default:
-      site.data['en'].strings.home.projects_title}}
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 py-8 md:py-16">
-      {% for project in site.projects %}
-      {% if project.featured %}
-      {% include item_card.html item=project %}
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="pt-4 text-center">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
-        href="{{'/projects' | relative_url }}">
-        {{ site.data[site.active_lang].strings.home.see_more_projects | default:
-        site.data['en'].strings.home.see_more_projects }}
-      </a>
-    </div>
-  </div>
-</section>
+{% include home_section.html 
+   id="projects" 
+   title_key="home.projects_title"
+   collection=site.projects 
+   cols="lg:grid-cols-3"
+   link="/projects"
+   link_key="home.see_more_projects"
+   featured_only=true
+%}
 {% endif %}
 
-<section id="speaking" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
-  <div class="py-16">
-    <h2 class="text-3xl font-bold text-center md:text-left">
-      {{ site.data[site.active_lang].strings.home.speaking_title | default:
-      site.data['en'].strings.home.speaking_title}}
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 py-8 md:py-16">
-      {% for speaking in site.speaking limit:2 %}
-      {% include item_card.html item=speaking %}
-      {% endfor %}
-    </div>
-    <div class="pt-4 text-center">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/speaking' | relative_url }}">
-        {{ site.data[site.active_lang].strings.home.see_more_speaking | default:
-        site.data['en'].strings.home.see_more_speaking }}
-      </a>
-    </div>
-  </div>
-</section>
+{% include home_section.html 
+   id="speaking" 
+   title_key="home.speaking_title"
+   collection=site.speaking 
+   limit=2
+   link="/speaking"
+   link_key="home.see_more_speaking"
+%}
 
-<section id="publications" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
-  <div class="py-16">
-    <h2 class="text-3xl font-bold text-center md:text-left">
-      {{ site.data[site.active_lang].strings.home.publications_title | default:
-      site.data['en'].strings.home.publications_title}}
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 py-8 md:py-16">
-      {% for publication in site.publications limit:2 %}
-      {% include item_card.html item=publication %}
-      {% endfor %}
-    </div>
-    <div class="pt-4 text-center">
-      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/research' | relative_url }}">
-        {{ site.data[site.active_lang].strings.home.see_more_publications | default:
-        site.data['en'].strings.home.see_more_publications }}
-      </a>
-    </div>
-  </div>
-</section>
+{% include home_section.html 
+   id="publications" 
+   title_key="home.publications_title"
+   collection=site.publications 
+   limit=2
+   link="/research"
+   link_key="home.see_more_publications"
+%}
 
 <section id="blog" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
   <div class="py-16">
     <h2 class="text-3xl font-bold text-center md:text-left">
-      {{ site.data[site.active_lang].strings.home.blog_title | default:
-      site.data['en'].strings.home.blog_title}}
+      {% include t.html key="home.blog_title" %}
     </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
       {% for post in site.posts limit:3 %}
@@ -98,8 +62,7 @@ layout: default
     </div>
     <div class="pt-4 text-center">
       <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{'/blog' | relative_url }}">
-        {{ site.data[site.active_lang].strings.home.see_more_posts | default:
-        site.data['en'].strings.home.see_more_posts}}
+        {% include t.html key="home.see_more_posts" %}
       </a>
     </div>
   </div>

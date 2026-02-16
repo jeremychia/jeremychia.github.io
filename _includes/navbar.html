@@ -12,9 +12,10 @@
       {% assign nav_pages = site.pages | where: "nav", true | sort: "nav_order" %}
       {% for p in nav_pages %}
       {% assign nav_key = p.name | remove: '.md' | remove: '.html' %}
-      {% assign nav_title = site.data[site.active_lang].strings.nav[nav_key] | default: site.data['en'].strings.nav[nav_key] | default: p.title %}
+      {% capture t_key %}nav.{{ nav_key }}{% endcapture %}
+      {% capture nav_title %}{% include t.html key=t_key default=p.title %}{% endcapture %}
       <div><a class="px-4 hover:text-sky-400 {% if p.url == current_page_url %}font-bold{% endif %}"
-          href="{{ p.url | relative_url }}">{{ nav_title }}</a></div>
+          href="{{ p.url | relative_url }}">{{ nav_title | strip }}</a></div>
       {% endfor %}
 
       <!-- Dark mode toggle -->

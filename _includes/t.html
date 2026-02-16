@@ -1,0 +1,13 @@
+{%- comment -%}
+  Helper to get translated string with English fallback.
+  Usage: {% include t.html key="home.blog_title" %}
+  For dynamic keys: {% capture k %}nav.{{ nav_key }}{% endcapture %}{% include t.html key=k %}
+{%- endcomment -%}
+{%- assign keys = include.key | split: "." -%}
+{%- assign translated = site.data[site.active_lang].strings -%}
+{%- assign fallback = site.data['en'].strings -%}
+{%- for k in keys -%}
+  {%- assign translated = translated[k] -%}
+  {%- assign fallback = fallback[k] -%}
+{%- endfor -%}
+{{ translated | default: fallback | default: include.default }}

@@ -1,0 +1,38 @@
+{%- comment -%}
+  Reusable homepage section component.
+  Usage: {% include home_section.html 
+           id="projects" 
+           title_key="home.projects_title"
+           collection=site.projects 
+           limit=3 
+           cols="lg:grid-cols-3"
+           link="/projects"
+           link_key="home.see_more_projects"
+           featured_only=true
+  %}
+{%- endcomment -%}
+<section id="{{ include.id }}" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+  <div class="py-16">
+    <h2 class="text-3xl font-bold text-center md:text-left">
+      {% include t.html key=include.title_key %}
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 {{ include.cols | default: '' }} gap-x-8 gap-y-16 py-8 md:py-16">
+      {% for item in include.collection limit:include.limit %}
+        {% if include.featured_only %}
+          {% if item.featured %}
+            {% include item_card.html item=item %}
+          {% endif %}
+        {% else %}
+          {% include item_card.html item=item %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% if include.link %}
+    <div class="pt-4 text-center">
+      <a class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold" href="{{ include.link | relative_url }}">
+        {% include t.html key=include.link_key %}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
