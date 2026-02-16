@@ -44,7 +44,7 @@
         {% for tongue in site.languages %}
         <a class="px-2 hover:text-sky-400 {% if tongue == site.active_lang %}font-bold{% endif %}" {% static_href
           %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
-          {% endstatic_href %}>{% if tongue == 'yue' %}粵{% elsif tongue == 'en' %}EN{% else %}{{ tongue | upcase }}{% endif %}</a>
+          {% endstatic_href %}>{% if tongue == 'yue' %}粵{% elsif tongue == 'en' %}EN{% elsif tongue == 'de' %}DE{% else %}{{ tongue | upcase }}{% endif %}</a>
         {% endfor %}
       </div>
       {% endif %}
@@ -73,7 +73,7 @@
         {% if tongue != site.active_lang %}
         <a class="hover:text-sky-400" {% static_href
           %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
-          {% endstatic_href %}>{% if tongue == 'yue' %}粵語{% elsif tongue == 'en' %}English{% else %}{{ tongue | upcase }}{% endif %}</a>
+          {% endstatic_href %}>{% if tongue == 'yue' %}粵語{% elsif tongue == 'en' %}English{% elsif tongue == 'de' %}Deutsch{% else %}{{ tongue | upcase }}{% endif %}</a>
         {% endif %}
         {% endfor %}
         {% endif %}

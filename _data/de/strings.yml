@@ -1,0 +1,34 @@
+home:
+  contact_me: "Kontaktieren Sie mich zu Daten-Engineering, Finanzanalyse oder Impact-Projekten:"
+  blog_title: "Blog"
+  see_more_posts: "Mehr Artikel →"
+  projects_title: "Projekte"
+  see_more_projects: "Mehr Projekte →"
+  speaking_title: "Vorträge"
+  see_more_speaking: "Mehr Vorträge →"
+  publications_title: "Forschung"
+  see_more_publications: "Mehr Forschung →"
+nav:
+  projects: "Projekte"
+  speaking: "Vorträge"
+  research: "Forschung"
+  blog: "Blog"
+footer:
+  call_to_action: "Kontakt:"
+  pages: Weitere Seiten
+blog:
+  read_more: "Weiterlesen →"
+  more_articles: "Weitere Artikel"
+tags:
+  analytics: "Datenanalyse"
+  api: "API"
+  bigquery: "BigQuery"
+  data-analysis: "Datenanalyse"
+  dbt: "dbt"
+  gig-economy: "Gig-Economy"
+  javascript: "JavaScript"
+  nlp: "Sprachverarbeitung"
+  politics: "Politik"
+  python: "Python"
+  singapore: "Singapur"
+  streamlit: "Streamlit"

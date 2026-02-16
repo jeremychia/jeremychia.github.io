@@ -25,7 +25,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-polyglot
 
-languages: ["en", "yue"]
+languages: ["en", "yue", "de"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
