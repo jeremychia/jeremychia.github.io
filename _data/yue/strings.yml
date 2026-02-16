@@ -1,21 +1,21 @@
 home:
-  contact_me: "歡迎交流數據工程、財務分析、或者如何創造影響力："
+  contact_me: "想傾下數據工程、財務分析或者點樣創造影響力："
   blog_title: "文章"
-  see_more_posts: "更多文章 →"
+  see_more_posts: "睇多啲 →"
   projects_title: "作品"
-  see_more_projects: "更多作品 →"
+  see_more_projects: "睇多啲 →"
   speaking_title: "演講"
-  see_more_speaking: "更多演講 →"
+  see_more_speaking: "睇多啲 →"
   publications_title: "研究"
-  see_more_publications: "更多研究 →"
+  see_more_publications: "睇多啲 →"
 nav:
   projects: "作品"
   speaking: "演講"
   research: "研究"
   blog: "文章"
 footer:
-  call_to_action: "聯繫我："
-  pages: 頁面導覽
+  call_to_action: "搵我傾計："
+  pages: 其他頁面
 blog:
-  read_more: "閱讀全文 →"
+  read_more: "睇全文 →"
   more_articles: "更多文章"
