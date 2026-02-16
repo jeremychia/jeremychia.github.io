@@ -8,7 +8,7 @@
       </p>
     </a>
 
-    <div class="flex divide-x">
+    <div class="flex divide-x items-center">
       {% for page in site.pages %}
       {% if page.nav %}
       <div><a class="px-4 hover:text-sky-400 {% if page.url == current_page_url %}font-bold{% endif %}"
@@ -16,10 +16,22 @@
       {% endif%}
       {% endfor %}
 
+      <!-- Dark mode toggle -->
+      <div class="px-2">
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+          <svg class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+      </div>
+
       {% if site.languages.size > 1 %}
       <div class="language-switcher relative">
         <button class="current-language px-4 hover:text-sky-400">
-          {{ site.active_lang | upcase }}
+          {% if site.active_lang == 'yue' %}粵{% elsif site.active_lang == 'en' %}EN{% else %}{{ site.active_lang | upcase }}{% endif %}
         </button>
 
         <div class="dropdown-content absolute hidden mt-2 py-2 bg-white rounded shadow-lg z-20">
@@ -27,7 +39,7 @@
           {% if tongue != site.active_lang %}
           <a class="p-4 hover:text-sky-400" {% static_href
             %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
-            {% endstatic_href %}>{{ tongue | upcase }}</a>{%- if forloop.last == false -%}{{" "}}{{ site.langsep }}{%-
+            {% endstatic_href %}>{% if tongue == 'yue' %}粵{% elsif tongue == 'en' %}EN{% else %}{{ tongue | upcase }}{% endif %}</a>{%- if forloop.last == false -%}{{" "}}{{ site.langsep }}{%-
           endif -%}
           {% endif %}
           {% endfor %}
@@ -39,6 +51,21 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      // Dark mode toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+          if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.theme = 'light';
+          } else {
+            document.documentElement.classList.add('dark');
+            localStorage.theme = 'dark';
+          }
+        });
+      }
+
+      // Language switcher
       const currentLangButton = document.querySelector('.current-language');
       const dropdownContent = document.querySelector('.dropdown-content');
 

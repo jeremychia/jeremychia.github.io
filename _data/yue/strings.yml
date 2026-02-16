@@ -1,0 +1,16 @@
+home:
+  contact_me: "想傾數據、財務、或者點樣做啲有意義嘅嘢？搵我傾啦："
+  blog_title: "寫嘢"
+  see_more_posts: "睇多啲 →"
+  projects_title: "我做過嘅嘢"
+  see_more_projects: "睇多啲項目 →"
+  speaking_title: "講座"
+  see_more_speaking: "全部講座 →"
+  publications_title: "出版物"
+  see_more_publications: "全部出版物 →"
+footer:
+  call_to_action: "搵我傾偈："
+  pages: 其他頁面
+blog:
+  read_more: "睇全文 →"
+  more_articles: "更多文章"
