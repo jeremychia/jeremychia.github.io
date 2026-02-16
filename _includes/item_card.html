@@ -11,7 +11,8 @@
     {% if include.item.tags %}
     <div class="mt-6 flex flex-wrap">
       {% for tag in include.item.tags %}
-      <span class="font-mulish text-sm text-gray-500" style="margin-right: 0.5rem;">#{{ tag | xml_escape }}</span>
+      {% assign translated_tag = site.data[site.active_lang].strings.tags[tag] | default: tag %}
+      <span class="font-mulish text-sm text-gray-500" style="margin-right: 0.5rem;">#{{ translated_tag | xml_escape }}</span>
       {% endfor %}
     </div>
     {% endif %}

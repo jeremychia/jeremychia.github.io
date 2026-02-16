@@ -19,3 +19,16 @@ footer:
 blog:
   read_more: "睇全文 →"
   more_articles: "更多文章"
+tags:
+  analytics: "數據分析"
+  api: "API"
+  bigquery: "BigQuery"
+  data-analysis: "數據分析"
+  dbt: "dbt"
+  gig-economy: "零工經濟"
+  javascript: "JavaScript"
+  nlp: "自然語言處理"
+  politics: "政治"
+  python: "Python"
+  singapore: "新加坡"
+  streamlit: "Streamlit"
