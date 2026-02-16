@@ -5,10 +5,13 @@ description: >-
   Chartered Accountant turned Analytics Engineer. Building data systems for finance teams.
 image: /assets/images/jeremy-batik-brown-square.jpg
 main_content: >
-    Hi, I'm Jeremy 👋 — a **Chartered Accountant** turned **Analytics Engineer**.
+    # Jeremy Chia
 
 
-    I build data systems for finance teams. Berlin-based 🇩🇪, from Singapore 🇸🇬.
+    I bridge **finance logic** and **modern data engineering**. 
+    
+    
+    From closing books as an accountant to building the pipelines that power financial reporting — I speak both languages.
 footer: false
 permalink: /
 ---

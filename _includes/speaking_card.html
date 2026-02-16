@@ -1,15 +1,19 @@
-<div class="rounded-lg hover:bg-gray-50 p-8 shadow">
-  <a href="{{include.talk.url | relative_url}}">
-    <img src="{{include.talk.image | relative_url}}" alt="{{include.talk.title}}" class="object-cover w-full h-60 rounded" />
-    <p class="font-mulish text-gray-500 mt-6 mb-2">{{include.talk.venue | upcase}}</p>
-    <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">{{include.talk.title}}</h2>
-    <div class="font-mulish text-gray-600">
-      {{include.talk.excerpt}}
+<div class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-gray-300 dark:hover:border-slate-600 transition-all duration-300 overflow-hidden">
+  <a href="{{include.talk.url | relative_url}}" class="block">
+    <div class="relative overflow-hidden">
+      <img src="{{include.talk.image | relative_url}}" alt="{{include.talk.title}}" class="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105" />
     </div>
-    <div class="my-4">
-      {% for tag in include.talk.tags %}
-      <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
-      {% endfor %}
+    <div class="p-5">
+      <p class="text-xs font-medium text-sky-600 dark:text-sky-400 mb-2">{{include.talk.venue | upcase}}</p>
+      <h2 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors line-clamp-2 mb-2">{{include.talk.title}}</h2>
+      <p class="text-sm text-gray-600 dark:text-slate-400 line-clamp-2">
+        {{include.talk.excerpt}}
+      </p>
+      <div class="mt-4 pt-3 border-t border-gray-100 dark:border-slate-700 flex flex-wrap gap-1.5">
+        {% for tag in include.talk.tags %}
+        <span class="px-2 py-0.5 text-xs font-mono bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-400 rounded">{{ tag }}</span>
+        {% endfor %}
+      </div>
     </div>
   </a>
 </div>

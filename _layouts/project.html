@@ -2,21 +2,120 @@
 layout: default
 ---
 
-
 <link rel="stylesheet" href="{{ '/assets/css/monokai.css' | relative_url }}">
-<div class="container mx-auto">
-  <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
-    <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
+<div class="container mx-auto px-4">
+  <article class="max-w-4xl mx-auto pb-10 pt-24 lg:pt-28 lg:pb-20">
+    
+    <!-- Project Header -->
+    <header class="mb-12">
+      <div class="flex flex-wrap gap-2 mb-4">
+        {% if page.category %}
+        <span class="px-3 py-1 text-xs font-medium bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 rounded-full">{{ page.category }}</span>
+        {% endif %}
+        {% for tag in page.tags %}
+        <span class="px-2 py-1 text-xs font-mono bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-slate-400 rounded">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight mb-6">{{page.title}}</h1>
+      
+      {% if page.excerpt %}
+      <p class="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{{ page.excerpt }}</p>
+      {% endif %}
+      
+      {% if page.links %}
+      <div class="flex flex-wrap gap-3 mt-6">
+        {% for link in page.links %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
+          {% if link.title == "GitHub" %}
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          {% elsif link.title == "Live Site" or link.title == "Demo" %}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          {% else %}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          {% endif %}
+          {{ link.title }}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
 
-    <img src="{{page.image}}" alt="{{page.title}}">
+    {% if page.image %}
+    <figure class="mb-12 rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700">
+      <img src="{{page.image}}" alt="{{page.title}}" class="w-full">
+    </figure>
+    {% endif %}
 
-    <div class="my-6">
+    <!-- Project Showcase Sections -->
+    {% if page.business_problem or page.modeling_logic or page.impact %}
+    <div class="grid gap-8 mb-12">
+      
+      {% if page.business_problem %}
+      <section class="p-6 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-xl">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-2 bg-amber-100 dark:bg-amber-900/50 rounded-lg">
+            <svg class="w-5 h-5 text-amber-700 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h2 class="text-lg font-semibold text-amber-900 dark:text-amber-200">The Business Problem</h2>
+        </div>
+        <div class="prose prose-amber dark:prose-invert prose-sm max-w-none text-amber-900 dark:text-amber-100">
+          {{ page.business_problem | markdownify }}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if page.modeling_logic %}
+      <section class="p-6 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-2 bg-slate-200 dark:bg-slate-700 rounded-lg">
+            <svg class="w-5 h-5 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+            </svg>
+          </div>
+          <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100">The SQL / Modeling Logic</h2>
+        </div>
+        <div class="prose prose-slate dark:prose-invert prose-sm max-w-none">
+          {{ page.modeling_logic | markdownify }}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if page.impact %}
+      <section class="p-6 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-2 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg">
+            <svg class="w-5 h-5 text-emerald-700 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h2 class="text-lg font-semibold text-emerald-900 dark:text-emerald-200">The Impact</h2>
+        </div>
+        <div class="prose prose-emerald dark:prose-invert prose-sm max-w-none text-emerald-900 dark:text-emerald-100">
+          {{ page.impact | markdownify }}
+        </div>
+      </section>
+      {% endif %}
+
+    </div>
+    {% endif %}
+
+    <!-- Main Content -->
+    <div class="prose prose-lg prose-slate dark:prose-invert max-w-none 
+                prose-headings:font-semibold prose-headings:tracking-tight
+                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
+                prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+                prose-a:text-sky-600 dark:prose-a:text-sky-400 prose-a:no-underline hover:prose-a:underline
+                prose-code:text-sm prose-code:bg-gray-100 dark:prose-code:bg-slate-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
+                prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-700">
       {{content}}
     </div>
 
-    <div class="mx-auto py-8">
+    <div class="mt-16 pt-8 border-t border-gray-200 dark:border-slate-700">
       {% include sharing.html %}
     </div>
 
-  </div>
+  </article>
 </div>
