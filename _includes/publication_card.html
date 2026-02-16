@@ -2,12 +2,12 @@
   <a href="{{include.publication.url | relative_url}}" class="flex flex-col h-full">
     <p class="font-mulish text-gray-500 mb-2 text-sm">{{include.publication.venue | upcase}}</p>
     <h2 class="text-xl hover:underline font-bold my-2 text-gray-800">{{include.publication.title}}</h2>
-    <div class="font-mulish text-gray-600 mt-4 flex-grow">
+    <div class="font-mulish text-sm text-gray-600 mt-4 flex-grow">
       {{include.publication.excerpt}}
     </div>
-    <div class="mt-6 flex flex-wrap gap-4">
+    <div class="mt-6 flex flex-wrap">
       {% for tag in include.publication.tags %}
-      <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
+      <span class="font-mulish text-sm text-gray-500" style="margin-right: 0.5rem;">#{{ tag | xml_escape }}</span>
       {% endfor %}
     </div>
   </a>
