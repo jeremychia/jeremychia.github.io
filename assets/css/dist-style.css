@@ -9,3 +9,14 @@
 .pt-4{padding-top:1rem}
 .p-4{padding:1rem}
 @media (min-width:768px){.md\:p-8{padding:2rem}.md\:px-0{padding-left:0;padding-right:0}}
+
+/* Language dropdown */
+.z-50{z-index:50}
+.w-32{width:8rem}
+.py-2{padding-top:0.5rem;padding-bottom:0.5rem}
+.right-0{right:0}
+.mt-2{margin-top:0.5rem}
+.mr-1{margin-right:0.25rem}
+.ml-1{margin-left:0.25rem}
+.w-4{width:1rem}
+.h-4{height:1rem}

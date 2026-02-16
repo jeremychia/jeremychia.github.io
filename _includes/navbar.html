@@ -40,12 +40,23 @@
       </div>
 
       {% if site.languages.size > 1 %}
-      <div class="flex items-center">
-        {% for tongue in site.languages %}
-        <a class="px-2 hover:text-sky-400 {% if tongue == site.active_lang %}font-bold{% endif %}" {% static_href
-          %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
-          {% endstatic_href %}>{% if tongue == 'yue' %}粵{% elsif tongue == 'en' %}EN{% elsif tongue == 'de' %}DE{% else %}{{ tongue | upcase }}{% endif %}</a>
-        {% endfor %}
+      <div class="relative px-2">
+        <button id="lang-dropdown-toggle" class="flex items-center hover:text-sky-400" aria-label="Select language">
+          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+          </svg>
+          <span>{% if site.active_lang == 'yue' %}粵{% elsif site.active_lang == 'en' %}EN{% elsif site.active_lang == 'de' %}DE{% else %}{{ site.active_lang | upcase }}{% endif %}</span>
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="lang-dropdown" class="hidden absolute right-0 mt-2 py-2 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-xl z-50">
+          {% for tongue in site.languages %}
+          <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 {% if tongue == site.active_lang %}font-bold{% endif %}" {% static_href
+            %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
+            {% endstatic_href %}>{% if tongue == 'yue' %}粵語{% elsif tongue == 'en' %}English{% elsif tongue == 'de' %}Deutsch{% else %}{{ tongue | upcase }}{% endif %}</a>
+          {% endfor %}
+        </div>
       </div>
       {% endif %}
     </div>
@@ -89,6 +100,20 @@
       if (mobileMenuToggle && mobileMenu) {
         mobileMenuToggle.addEventListener('click', function() {
           mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Language dropdown toggle
+      const langDropdownToggle = document.getElementById('lang-dropdown-toggle');
+      const langDropdown = document.getElementById('lang-dropdown');
+      if (langDropdownToggle && langDropdown) {
+        langDropdownToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          langDropdown.classList.toggle('hidden');
+        });
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function() {
+          langDropdown.classList.add('hidden');
         });
       }
 
