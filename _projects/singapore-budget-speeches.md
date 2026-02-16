@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Singapore Budget Speeches Analysis"
-image: "/assets/images/main.avif"
+image: "/assets/images/projects/singapore-budget-speeches.png"
 category: Analysis
 tags:
   - politics

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Personal Finance Data Pipeline"
-image: "/assets/images/main.avif"
+image: "/assets/images/projects/personal_finances.png"
 featured: true
 category: Data Engineering
 tags:
