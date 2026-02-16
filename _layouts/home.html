@@ -50,7 +50,7 @@ layout: default
    link_key="home.see_more_publications"
 %}
 
-<section id="blog" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+<section id="blog" class="container mx-auto px-4 md:px-0 flex flex-col items-center justify-center min-h-screen">
   <div class="py-16">
     <h2 class="text-3xl font-bold text-center md:text-left">
       {% include t.html key="home.blog_title" %}
@@ -74,7 +74,7 @@ layout: default
   </article>
 </section>
 
-<div id="dot-nav" class="fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4">
+<div id="dot-nav" class="hidden md:block fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4">
   <a href="#main" aria-label="Jump to main section"
     class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"></a>
   {% if site.projects.size > 0 %}
