@@ -1,17 +1,14 @@
-<div class="group rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
-  <a href="{{include.talk.url | relative_url}}" class="block">
-    <div class="relative overflow-hidden rounded-xl">
-      <img src="{{include.talk.image | relative_url}}" alt="{{include.talk.title}}" class="object-cover w-full h-52 transition-transform duration-500 group-hover:scale-105" />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-    </div>
-    <p class="font-mulish text-sky-600 mt-5 mb-2 text-xs font-semibold tracking-wider">{{include.talk.venue | upcase}}</p>
-    <h2 class="text-xl md:text-2xl font-bold my-2 text-gray-900 group-hover:text-sky-600 transition-colors duration-300">{{include.talk.title}}</h2>
-    <div class="font-mulish text-gray-500 leading-relaxed line-clamp-3">
+<div class="rounded-lg hover:bg-gray-50 p-8 shadow">
+  <a href="{{include.talk.url | relative_url}}">
+    <img src="{{include.talk.image | relative_url}}" alt="{{include.talk.title}}" class="object-cover w-full h-60 rounded" />
+    <p class="font-mulish text-gray-500 mt-6 mb-2">{{include.talk.venue | upcase}}</p>
+    <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">{{include.talk.title}}</h2>
+    <div class="font-mulish text-gray-600">
       {{include.talk.excerpt}}
     </div>
-    <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+    <div class="my-4">
       {% for tag in include.talk.tags %}
-      <span class="font-mulish text-xs text-gray-400 bg-gray-50 px-2 py-0.5 rounded-full">#{{ tag | xml_escape }}</span>
+      <span class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</span>
       {% endfor %}
     </div>
   </a>

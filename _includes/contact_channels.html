@@ -1,18 +1,18 @@
-<div class="flex justify-center md:justify-start pt-4 gap-4">
+<div class="flex justify-center md:justify-start pt-2 gap-6">
   {% assign rrss = site.rrss %}
   {% if rrss.linkedin %}
-  <a class="group p-2.5 bg-gray-100 rounded-full transition-all duration-300 hover:bg-sky-500 hover:shadow-lg hover:-translate-y-1" href="{{ rrss.linkedin }}" target="_blank">
-    <img class="h-5 w-5 transition-all duration-300 group-hover:brightness-0 group-hover:invert" src="{{'/assets/images/rrss/linkedin.svg' | relative_url }}" alt="Linkedin Icon">
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.linkedin }}" target="_blank">
+    <img class="h-6 w-6" src="{{'/assets/images/rrss/linkedin.svg' | relative_url }}" alt="Linkedin Icon">
   </a>
   {% endif %}
   {% if rrss.github %}
-  <a class="group p-2.5 bg-gray-100 rounded-full transition-all duration-300 hover:bg-gray-900 hover:shadow-lg hover:-translate-y-1" href="{{ rrss.github }}" target="_blank">
-    <img class="h-5 w-5 transition-all duration-300 group-hover:brightness-0 group-hover:invert" src="{{'/assets/images/rrss/github-mark.svg' | relative_url }}" alt="Github Icon">
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.github }}" target="_blank">
+    <img class="h-6 w-6" src="{{'/assets/images/rrss/github-mark.svg' | relative_url }}" alt="Github Icon">
   </a>
   {% endif %}
   {% if rrss.email %}
-  <a class="group p-2.5 bg-gray-100 rounded-full transition-all duration-300 hover:bg-rose-500 hover:shadow-lg hover:-translate-y-1" href="mailto:{{ rrss.email }}">
-    <img class="h-5 w-5 transition-all duration-300 group-hover:brightness-0 group-hover:invert" src="{{'/assets/images/rrss/email.svg' | relative_url }}" alt="Email Icon">
+  <a class="transition hover:scale-110 duration-300" href="mailto:{{ rrss.email }}">
+    <img class="h-6 w-6" src="{{'/assets/images/rrss/email.svg' | relative_url }}" alt="Email Icon">
   </a>
   {% endif %}
 </div>
