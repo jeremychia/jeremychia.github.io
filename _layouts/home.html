@@ -74,9 +74,9 @@ layout: default
   </article>
 </section>
 
-<div id="dot-nav" class="hidden md:block fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4">
+<div id="dot-nav" class="hidden md:block fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4" role="navigation" aria-label="Page section navigation">
   <a href="#main" aria-label="Jump to main section"
-    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125"></a>
+    class="dot w-3 h-3 block rounded-full border-2 border-gray-800 bg-gray-800 hover:scale-125" aria-current="true"></a>
   {% if site.projects.size > 0 %}
   <a href="#projects" aria-label="Jump to projects section"
     class="dot w-3 h-3 block rounded-full border-2 border-gray-800 hover:scale-125"></a>
@@ -93,23 +93,27 @@ layout: default
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
-    const navDots = document.querySelectorAll('#dot-nav .dot');
+    const sections = Array.from(document.querySelectorAll('section[id]'));
+    const navDots = Array.from(document.querySelectorAll('#dot-nav .dot'));
+    const offset = 140;
 
     function onScroll() {
       let currentSection = '';
 
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 120) { // Ajusta el valor según sea necesario
+        if (window.scrollY >= sectionTop - offset) {
           currentSection = section.getAttribute('id');
         }
       });
 
       navDots.forEach(dot => {
         dot.classList.remove('bg-gray-800');
+        dot.removeAttribute('aria-current');
+
         if (dot.getAttribute('href') === `#${currentSection}`) {
           dot.classList.add('bg-gray-800');
+          dot.setAttribute('aria-current', 'true');
         }
       });
     }
@@ -128,6 +132,6 @@ layout: default
       });
     });
 
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
   });
 </script>
