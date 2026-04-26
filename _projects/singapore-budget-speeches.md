@@ -13,75 +13,47 @@ links:
     url: https://github.com/parleh-mate/singapore-budget-speeches
 ---
 
-Interactive exploration of **65 years of Singapore's fiscal policy** through 40,000+ sentences from budget speeches.
+Interactive exploration of **65 years of Singapore's fiscal policy** through 40,123 sentences from 66 budget speeches (1960–2025).
 
 ## At a Glance
 
-- **40,123 sentences** from 66 budget speeches (1960-2025)
-- **7 Finance Ministers** from Goh Keng Swee to Lawrence Wong
-- **15 Ministry classifications** (Defence, Finance, Education, Health, etc.)
-- Linguistic analysis tracking readability and complexity evolution
-- Crisis response patterns analyzing 4 major economic crises
+- **7 Finance Ministers** analysed from Goh Keng Swee to Lawrence Wong
+- **15 ministry classifications** tracking policy focus across 7 decades
+- **4 major economic crises** with quantified policy response shifts
+- Linguistic analysis tracking how readability and sentence complexity evolved over time
+
+## How It Works
+
+Speeches are scraped from the Parliament Hansard and sentence-tokenised using **spaCy**. Each sentence is then classified into one of 15 ministry categories using a weighted keyword matching system — multi-word terms (e.g. "national service") score higher than single words — achieving 82.7% classification coverage across all sentences. The remaining 17.3% are labelled "general".
+
+Analysis notebooks produce CSV datasets; an export script shards these into decade-level JSON files for progressive loading on the web front-end.
 
 ## Key Findings
 
-### Singapore's Policy Evolution
+| Era | Period | Dominant Focus |
+|-----|--------|----------------|
+| Survival & Security | 1960s–70s | Defence at 19.8% — industrialisation, nation-building |
+| Economic Transformation | 1980s–90s | Finance at 17.4% — services economy, crisis responses |
+| Inclusive Growth | 2000s–10s | Manpower at 9.2% — CPF reforms, social safety nets |
+| Sustainable Future | 2020s | Sustainability at 4.1% — climate, digital transformation |
 
-| Era | Period | Focus |
-|-----|--------|-------|
-| **Survival & Security** | 1960s-1970s | Defence 19.8%, industrialization, nation-building |
-| **Economic Transformation** | 1980s-1990s | Finance 17.4%, services economy, crisis responses |
-| **Inclusive Growth** | 2000s-2010s | Manpower 9.2%, healthcare, social safety nets |
-| **Sustainable Future** | 2020s | Environment 4.1%, digital, climate action |
+Crisis response patterns are measurable: the 1997 Asian Crisis triggered the highest Finance spike (+5.3pp), while COVID-19 shifted emphasis toward Health (+1.9pp) and Social & Family (+1.1pp).
 
-### Finance Minister Comparison
+Speeches also got more accessible over time — average sentence length fell from 21.0 words in the 1960s to 18.1 words today.
 
-| Minister | Tenure | Top Focus | Archetype |
-|----------|--------|-----------|-----------|
-| Goh Keng Swee | 1959-1984 | Defence (25.2%) | The Architect |
-| Richard Hu | 1985-2001 | Finance (19.3%) | The Prudent Steward |
-| Tharman Shanmugaratnam | 2007-2015 | Manpower (9.2%) | The Social Reformer |
-| Heng Swee Keat | 2015-2021 | Manpower (9.8%) | The Inclusivity Champion |
-| Lawrence Wong | 2021-2025 | Sustainability (4.1%) | The Sustainability Advocate |
+## The Website
 
-## Project Components
+A six-page static site built with vanilla JavaScript and Plotly.js, designed for three audiences:
 
-| Component | Description |
-|-----------|-------------|
-| `extractor/` | Web scraping from Parliament Hansard |
-| `processor/` | Markdown → structured data pipeline using spaCy |
-| `analysis/` | Jupyter notebooks & key findings |
-| `output_markdown/` | Raw speeches (66 markdown files) |
-| `output_processor/` | Processed Parquet datasets |
-| `docs/` | Interactive website |
-
-## Methodology
-
-1. **Extraction** — Scrape from Parliament Hansard
-2. **Processing** — Sentence tokenization with spaCy
-3. **Classification** — 15 ministry categories (82.7% accuracy)
-4. **Analysis** — Linguistic metrics, crisis patterns
+- **The Storyteller** (5 min) — curated narrative with key insights
+- **The Explorer** (15 min) — interactive charts by topic and minister
+- **The Researcher** (30+ min) — full-text search across 39,704 sentences with decade, minister, and ministry filters
 
 ## Tech Stack
 
 - **Python** with Poetry for dependency management
-- **spaCy** for NLP processing
-- **Pandas/Parquet** for data storage
-- **Jupyter Notebooks** for analysis
-- **GitHub Pages** for interactive website
-
-## Usage Example
-
-```python
-import pandas as pd
-
-# Load sentence data
-df = pd.read_parquet('output_processor/2020.parquet')
-
-# Search for keywords
-healthcare = df[df['sentence_text'].str.contains('healthcare', case=False)]
-
-# Load ministry trends
-ministry_trends = pd.read_csv('analysis/ministry_by_year.csv', index_col=0)
-ministry_trends['defence'].plot(title='Defence Prominence Over Time')
-```
+- **spaCy** for sentence tokenisation and linguistic metrics
+- **Pandas / Parquet** for data storage and analysis
+- **Jupyter Notebooks** for exploratory analysis
+- **Plotly.js** for interactive charts
+- **GitHub Pages** for the interactive website

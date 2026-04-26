@@ -16,67 +16,38 @@ links:
     url: https://github.com/jeremychia/lalamove-profitability
 ---
 
-A web-based tool for **Singapore motorcycle delivery riders** to quickly assess whether a Lalamove order is worth taking.
+A mobile-first tool for Singapore motorcycle delivery riders to decide — in under 30 seconds — whether a Lalamove order is worth taking.
 
-## Features
+Built from personal experience as a part-time delivery rider, it models all the variables that matter: real road distances, wait times by building type, peak-hour traffic, and Lalamove's full deduction stack (15% commission + 9% GST + $0.50 platform fee).
 
-### Core Calculator
-- 📍 **Multi-stop route calculation** using Singapore's OneMap API
-- 📱 **GPS location support** — tap to use your current location
-- ⛽ **Fuel cost estimation** based on your motorcycle model (10+ bikes supported)
-- ⏱️ **Smart wait time prediction** based on building type (HDB, condo, office, mall, etc.)
-- 🚦 **Traffic-aware timing** — auto-detects peak hours in Singapore
-- 💰 **Profitability rating** with $/hour breakdown
+## Core Calculator
 
-### Fare Breakdown
-- 💵 **Lalamove deductions breakdown** — see exactly what you earn:
-  - 15% commission (on base fare)
-  - 9% VAT/GST
-  - $0.50 platform fee offset
-  - CPF withholding (placeholder for Platform Worker's Act)
-- 📊 **Net profit calculation** after all deductions and fuel costs
+- **Multi-stop route calculation** via OneMap's routing API, with a straight-line × 1.4 fallback when the API is unavailable
+- **GPS support** — tap to fill your current location via the browser Geolocation API
+- **Fuel cost** based on your motorcycle model (10+ pre-configured bikes from YBR125 to PCX160, or enter your own km/L)
+- **Wait time estimation** by building type — HDB (3 min), landed (2 min), condo (7 min), office (10 min), mall (8 min) — with time-of-day adjustments for lunch and dinner rushes
+- **Traffic awareness** — auto-detects Singapore peak hours and adjusts travel speeds accordingly
+- **$/hour rating** with a four-tier verdict: Excellent ($20+/hr), Good ($15+), Okay ($10+), Poor
 
-### Efficiency Guide
-- 📈 **Multi-stop efficiency analysis** — understand why 2-3 stop orders pay better
-- 🎯 **Scenario comparisons** — see $/hour for typical order types
-- ✅ **Decision framework** — quick take/consider/avoid guidelines
-- 🏢 **Wait time reference** by building type
+## Fare Breakdown
 
-### User Experience
-- 🗺️ **Open in Google Maps** — one tap to navigate your route
-- 🏷️ **Building type badges** — see HDB/Condo/Office inside inputs
-- 📱 **Mobile-optimized** — compact single-line layout for small screens
-- ⚙️ **Customizable settings** — petrol price, bike model, API token
+The calculator decomposes exactly what gets deducted before you're paid:
 
-## How It Works
+| Deduction | Amount |
+|-----------|--------|
+| Platform fee | −$0.50 (flat) |
+| Commission | −15% of base fare |
+| GST | −9% of base fare |
 
-1. **Enter locations** — your current location (or tap 📍 for GPS), pickup, and delivery stops
-2. **Enter the fare** — the amount shown in Lalamove app
-3. **Get instant analysis** — profitability rating, fare breakdown, and $/hour
+Net profit is then compared against fuel cost to produce the final hourly rate.
+
+## Efficiency Guide
+
+A companion page explains *why* multi-stop orders are disproportionately profitable: each additional stop adds ~$3 gross ($2.28 net) for roughly 5 minutes of extra wait — equivalent to $27/hr for that leg alone. The guide includes scenario comparisons across common order types and a building-type wait-time reference.
 
 ## Tech Stack
 
-- **Vanilla JavaScript** (ES Modules)
-- **OneMap Singapore API** for geocoding & routing
+- **Vanilla JavaScript** (ES Modules) — no framework, ~25KB total
+- **OneMap Singapore API** for geocoding and routing
+- **GitHub Actions** for CI/CD with secrets injection into `secrets.js`
 - **GitHub Pages** for hosting
-- **GitHub Actions** for CI/CD with secrets injection
-
-## Project Structure
-
-```
-docs/
-├── index.html          # Main calculator
-├── guide.html          # Efficiency guide page
-├── style.css           # Mobile-first styles
-└── js/
-    ├── main.js         # App entry point
-    ├── config.js       # Constants & configuration
-    ├── api/            # OneMap API client
-    ├── services/       # Business logic (routing, fuel, profitability)
-    ├── ui/             # UI components & rendering
-    └── utils/          # Validation & formatting
-```
-
-## Background
-
-This project was born from my experience as a part-time delivery rider. I wanted to understand which orders were truly profitable after accounting for fuel, time, and platform fees. The calculator helps riders make data-driven decisions in real-time.
