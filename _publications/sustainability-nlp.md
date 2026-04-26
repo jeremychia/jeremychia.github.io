@@ -33,3 +33,8 @@ Sustainability reporting has emerged as an increasingly important topic since th
 ## Citation
 
 Lui, G., Chia, J., & Shum, C. (2024). Impact of Sustainability Disclosures on Financial Performance: A Natural Language Processing Perspective. *Proceedings of the 57th Hawaii International Conference on System Sciences* (pp. 864-874).
+
+## Links
+
+- [ScholarSpace (UH)](https://scholarspace.manoa.hawaii.edu/items/3b92be94-fb1b-4d51-bebb-5aa4e80513eb)
+- [DBLP](https://dblp.org/db/conf/hicss/hicss2024.html)

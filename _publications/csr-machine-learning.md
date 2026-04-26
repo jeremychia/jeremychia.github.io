@@ -36,3 +36,9 @@ We constructed machine learning models to examine the relationship between ESG (
 ## Citation
 
 Teoh, T. T., Heng, Q. K., Chia, J. J., Shie, J. M., Liaw, S. W., Yang, M., & Nguwi, Y. Y. (2019). Machine learning-based corporate social responsibility prediction. *IEEE Conference on Robotics, Automation and Mechatronics (RAM)* (pp. 501-505).
+
+## Links
+
+- [IEEE Xplore](https://ieeexplore.ieee.org/document/9095846)
+- [ResearchGate](https://www.researchgate.net/publication/341503719_Machine_Learning-based_Corporate_Social_Responsibility_Prediction)
+- [Semantic Scholar](https://www.semanticscholar.org/paper/Machine-Learning-based-Corporate-Social-Prediction-Teoh-Heng/5c3837d84cec8bdd03a42b049ca0ba5e2f6ea432)
