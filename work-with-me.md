@@ -117,6 +117,7 @@ description: A working manual for teammates and collaborators.
   .dark .wm-accent-dark  { border-left-color: white; }
   .dark .wm-impression-box { background: #334155; }
   .dark .wm-reality-box  { background: rgba(30,58,138,0.2); border-color: rgba(59,130,246,0.3); }
+  .dark .wm-question-card { background: #1e293b; }
 </style>
 
 <section class="container mx-auto px-4 py-16" style="max-width: 52rem;">
@@ -381,6 +382,29 @@ description: A working manual for teammates and collaborators.
     </div>
 
   </div>
+
+  <!-- About You -->
+  <div style="margin-top: 3rem; padding-top: 3rem; border-top: 1px solid #e5e7eb;">
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+      <svg style="width: 1.25rem; height: 1.25rem; color: #6b7280; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+      </svg>
+      <h2 style="font-size: 1.25rem; font-weight: 700;">{{ wm.about_you.title }}</h2>
+    </div>
+    <p class="text-gray-500" style="font-size: 0.9375rem; margin-bottom: 1.75rem; max-width: 40rem;">{{ wm.about_you.subtitle }}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {% for q in wm.about_you.questions %}
+      <div class="wm-question-card" style="padding: 1.25rem; background: #f9fafb; border-radius: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <p class="text-sm text-gray-700" style="margin: 0; font-weight: 500;">{{ q.question }}</p>
+        <div style="border-top: 1px solid #e5e7eb; padding-top: 0.75rem; display: flex; flex-direction: column; gap: 0.375rem;">
+          <p class="text-sm text-gray-500" style="margin: 0; font-style: italic;">{{ q.why }}</p>
+          <button class="wm-tab-link text-sm" style="color: #3b82f6; cursor: pointer; background: none; border: none; padding: 0; text-align: left;" data-target="{{ q.link_tab }}">{{ q.link_label }}</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
 </section>
 
 <script>
