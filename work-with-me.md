@@ -117,7 +117,6 @@ description: A working manual for teammates and collaborators.
   .dark .wm-accent-dark  { border-left-color: white; }
   .dark .wm-impression-box { background: #334155; }
   .dark .wm-reality-box  { background: rgba(30,58,138,0.2); border-color: rgba(59,130,246,0.3); }
-  .dark .wm-question-card { background: #1e293b; }
 </style>
 
 <section class="container mx-auto px-4 py-16" style="max-width: 52rem;">
@@ -394,7 +393,7 @@ description: A working manual for teammates and collaborators.
     <p class="text-gray-500" style="font-size: 0.9375rem; margin-bottom: 1.75rem; max-width: 40rem;">{{ wm.about_you.subtitle }}</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {% for q in wm.about_you.questions %}
-      <div class="wm-question-card" style="padding: 1.25rem; background: #f9fafb; border-radius: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <div class="wm-card" style="display: flex; flex-direction: column; gap: 0.75rem;">
         <p class="text-sm text-gray-700" style="margin: 0; font-weight: 500;">{{ q.question }}</p>
         <div style="border-top: 1px solid #e5e7eb; padding-top: 0.75rem; display: flex; flex-direction: column; gap: 0.375rem;">
           <p class="text-sm text-gray-500" style="margin: 0; font-style: italic;">{{ q.why }}</p>
