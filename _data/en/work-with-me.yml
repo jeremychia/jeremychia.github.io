@@ -65,7 +65,7 @@ how_i_work:
       points:
         - "Direct and efficient: tells stakeholders what I think and why; won't pretend a bad solution is good"
         - "Drains over time — needs technical work and solitude to recharge"
-        - "Working on: understanding what problem they're solving first; finding where interests align"
+        - "Understands the problem they're solving first, then finds where interests align before pushing back"
       link_tab: "working-with-me"
       link_label: "→ connects to How I come across"
   leader:
@@ -172,8 +172,8 @@ working_with_me:
   feedback_how_title: "How I give feedback"
   feedback_how:
     - "Direct and fact-based; assumes people want to improve"
-    - "May not realise delivery lands as harsh — assume good intent"
-    - "Working on: feedback that opens doors rather than closes them, especially with self-critical people"
+    - "Delivery can land as harsh if I don't add context — assume good intent"
+    - "Calibrate for self-critical people: feedback should open doors, not close them"
   manage_title: "How to manage me well"
   manage:
     - "High autonomy with clear goals — tell me what success looks like, let me figure out how"
@@ -191,9 +191,13 @@ working_with_me:
   pitfalls_title: "Self-aware pitfalls"
   pitfalls:
     - strong: "High expectations → projecting."
-      text: "Can be disappointed quickly. Working on giving people space to grow at their own pace."
+      text: "Can be disappointed quickly. Correct for it by giving people space to grow at their own pace."
     - strong: "Action-oriented → missing emotional cues."
-      text: "Moves fast on outcomes; may miss that someone needs encouragement alongside correction."
+      text: "Moves fast on outcomes; checks in explicitly so encouragement doesn't get lost alongside correction."
+    - strong: "Over-weighted by past experience."
+      text: "Trusts what's worked before — deliberately, so it doesn't become a blind spot to new context."
+    - strong: "Over-protective of own ideas."
+      text: "Can be dismissive of weak challenges. Takes the longer view before pushing back."
     - strong: "Directness without context reads as harsh."
       text: "If feedback lands badly, it's likely delivery, not intent. Worth naming."
     - strong: "Lack of check-ins reads as indifference."
@@ -201,7 +205,7 @@ working_with_me:
     - strong: "Stepping on toes at scale."
       text: "Need to bring people along, not steamroll. Talk to people doing related work first."
     - strong: "Perfectionism and self-doubt."
-      text: "Sets impossibly high standards for self. Learning self-compassion without lowering the bar."
+      text: "Sets impossibly high standards for self. Holds the bar without letting it become self-punishing."
 
 about_you:
   title: "What I'd like to know about you"

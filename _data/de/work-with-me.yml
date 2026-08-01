@@ -65,7 +65,7 @@ how_i_work:
       points:
         - "Direkt und effizient: sagt Stakeholdern was ich denke und warum; tut nicht so als ob eine schlechte Lösung gut wäre"
         - "Erschöpft langfristig — braucht technische Arbeit und Stille zum Aufladen"
-        - "In Arbeit: erst verstehen welches Problem sie lösen; gemeinsame Interessen finden"
+        - "Versteht erst welches Problem sie lösen wollen, dann findet gemeinsame Interessen bevor er widerspricht"
       link_tab: "working-with-me"
       link_label: "→ verbindet mit Erster Eindruck"
   leader:
@@ -172,8 +172,8 @@ working_with_me:
   feedback_how_title: "Wie ich Feedback gebe"
   feedback_how:
     - "Direkt und sachlich; geht davon aus dass Menschen sich verbessern wollen"
-    - "Bemerke möglicherweise nicht dass die Lieferung hart ankommt — gute Absicht annehmen"
-    - "In Arbeit: Feedback das Türen öffnet statt schließt, besonders bei selbstkritischen Menschen"
+    - "Lieferung kann hart ankommen ohne zusätzlichen Kontext — gute Absicht annehmen"
+    - "Auf selbstkritische Menschen kalibriert: Feedback soll Türen öffnen, nicht schließen"
   manage_title: "Wie man mich gut führt"
   manage:
     - "Hohe Autonomie mit klaren Zielen — sag mir wie Erfolg aussieht, lass mich den Weg finden"
@@ -191,9 +191,13 @@ working_with_me:
   pitfalls_title: "Selbstbewusste Schwachstellen"
   pitfalls:
     - strong: "Hohe Erwartungen → Projektion."
-      text: "Kann schnell enttäuscht sein. Arbeitet daran Menschen Raum zu lassen in eigenem Tempo zu wachsen."
+      text: "Kann schnell enttäuscht sein. Gleicht das aus, indem er Menschen Raum lässt in eigenem Tempo zu wachsen."
     - strong: "Handlungsorientiert → emotionale Signale übersehen."
-      text: "Bewegt sich schnell auf Ergebnisse zu; übersieht möglicherweise dass jemand neben Korrektur auch Ermutigung braucht."
+      text: "Bewegt sich schnell auf Ergebnisse zu; fragt gezielt nach, damit Ermutigung neben der Korrektur nicht untergeht."
+    - strong: "Zu stark von vergangenen Erfahrungen geprägt."
+      text: "Vertraut auf Bewährtes — bewusst, damit daraus kein blinder Fleck für neuen Kontext wird."
+    - strong: "Zu beschützend gegenüber eigenen Ideen."
+      text: "Kann schwache Einwände zu schnell abtun. Nimmt die langfristige Perspektive ein, bevor er widerspricht."
     - strong: "Direktheit ohne Kontext wirkt hart."
       text: "Wenn Feedback schlecht ankommt liegt es wahrscheinlich an der Lieferung, nicht der Absicht. Lohnt sich zu benennen."
     - strong: "Fehlende Check-ins wirken wie Gleichgültigkeit."
@@ -201,7 +205,7 @@ working_with_me:
     - strong: "Im Maßstab anderen auf die Zehen treten."
       text: "Menschen mitnehmen, nicht überrollen. Erst mit Menschen sprechen die an verwandten Dingen arbeiten."
     - strong: "Perfektionismus und Selbstzweifel."
-      text: "Setzt unmöglich hohe Standards für sich selbst. Lernt Selbstmitgefühl ohne die Messlatte zu senken."
+      text: "Setzt unmöglich hohe Standards für sich selbst. Hält die Messlatte, ohne dass sie sich selbst bestraft."
 
 about_you:
   title: "Was ich gerne über dich wissen würde"
