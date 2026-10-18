@@ -2,17 +2,24 @@
 layout: home
 title: Senior Analytics Engineer | Chartered Accountant
 description: >-
-  Chartered Accountant turned Analytics Engineer. Building data systems for finance teams.
+  Chartered Accountant turned Analytics Engineer. I build data tools that let finance teams check their own numbers.
 image: /assets/images/jeremy-batik-brown-square.jpg
 main_content: >
-    Hi, I'm Jeremy 👋 — a **Chartered Accountant** turned **Analytics Engineer**.
+    Hi, I'm Jeremy 👋 I trained as a **Chartered Accountant**. Now I work as an **Analytics Engineer**.
 
 
-    I build data systems for finance teams: pipelines, controls, and dashboards that
-    hold up under scrutiny. My accounting background means I know what "correct"
-    actually means for a finance number before I write a line of code — and I've
-    used that to catch millions in overcharges and cut misstatement risk by 10x
-    at Vinted. Berlin-based 🇩🇪, from Singapore 🇸🇬.
+    Finance numbers decide real things. They decide what a team does next and what
+    a company tells the world. Often only a few people can check if those numbers
+    are right. I build the pipelines, tests and dashboards that let everyone else
+    check too.
+
+
+    My accounting training helps. I know what a correct finance number looks like
+    before I write any code. At Vinted, that work found €1.6M in carrier overcharges
+    and cut our misstatement risk from €40M to €4M.
+
+
+    I live in Berlin 🇩🇪 and I'm from Singapore 🇸🇬.
 footer: false
 permalink: /
 results:
@@ -28,11 +35,11 @@ results:
 
 ## What I do
 
-I work at the intersection of data engineering and finance — building pipelines, dashboards, and controls that help teams close books faster, catch errors earlier, and make better decisions.
+Finance teams need numbers they can trust. Most people can't see how those numbers are made. I build the pipelines, tests and dashboards that show the work. Teams close the books faster, find errors earlier and make decisions with more confidence.
 
-My background in accounting helps me understand what finance teams actually need. My engineering skills help me build it.
+I know accounting, so I know what finance teams need. I know engineering, so I can build it.
 
-Increasingly, the part I care about most isn't the pipeline itself but making sure the people around it understand *why* it works the way it does — through documentation, code review, or just explaining my reasoning instead of handing over an answer. If you're curious what that looks like day to day, I wrote up [how I work]({{ "/work-with-me" | relative_url }}).
+Increasingly, the part I care about most isn't the pipeline itself. It's making sure the people around it understand *why* it works the way it does. I do that with documentation, code review, or just explaining my reasoning instead of handing over an answer. If you're curious what that looks like day to day, I wrote up [how I work]({{ "/work-with-me" | relative_url }}).
 
 **Currently:** Senior Analytics Engineer @ Vinted
 
