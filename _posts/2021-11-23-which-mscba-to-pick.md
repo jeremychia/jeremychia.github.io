@@ -15,7 +15,7 @@ I intend to keep this article brief to leave room for a more comprehensive explo
 
 In recent years, the number of Business Analytics programmes have risen substantially. Just in the US alone, the number of Analytics and Data Science Masters have been increasing from merely 10+ in 2012 to 310+ in 2021. The Advanced Institute for Analytics shares this nifty graphic below. I expect that this trend is the same for the rest of the world too.
 
-![Growth of MScBA Programs](https://media.licdn.com/dms/image/C5612AQGlnGzmmLV5-g/article-inline_image-shrink_1000_1488/0/1637330798543?e=1727308800&v=beta&t=0OzrI1MC_FcJvy_r-wmLD1TJt93kw4OUevpzu9VHBDQ)
+> *Chart unavailable: growth in the number of Business Analytics masters programmes over recent years, as described above. The original image has expired and needs to be re-uploaded.*
 
 With more schools and prospective students seeking to jump on the bandwagon - I'd imagine that there will be more people looking and comparing programmes. Hopefully, this resource adds to your list of materials to help prospective students decide which schools to apply to and eventually pick.
 
@@ -33,7 +33,7 @@ Nevertheless, here are some interesting points I found.
 
 ## Singapore, France, and Canada have the most well-ranked programmes
 
-![Average ranks of courses](https://media.licdn.com/dms/image/C5612AQEtIeTDm_ONtg/article-inline_image-shrink_1500_2232/0/1637331518710?e=1727308800&v=beta&t=w5y8uxOWu3S4cvu3__dmIClpM_wP_pUtucXl3E0PiNk)
+> *Chart unavailable: average programme scores by country. Singapore (69.05), France (64.54) and Canada (63.93) score highest. The original image has expired and needs to be re-uploaded.*
 
 While the average scores in Singapore (Average Score: 69.05), France (Average Score: 64.54), and Canada (Average Score: 63.93) were the highest, the United States (59 programmes) and the United Kingdom (18 programmes) have the most number of programmes ranked in US rankings. These top destinations have different strengths:
 
@@ -57,7 +57,7 @@ Generally, when looking at schools, it'd be good to take a look at the professor
 
 ## Amongst the Top 20, Schools in the EU have the fastest ROI
 
-![Image to Earn](https://media.licdn.com/dms/image/C5612AQFnPZEr5CghRw/article-inline_image-shrink_1500_2232/0/1637610120315?e=1727308800&v=beta&t=TGWDoF3cODGF5C00-wflakSwd5rrfWJdCBxon_NbifI)
+> *Chart unavailable: return on investment for Top 20 programmes by region. Schools in the EU have the fastest return on investment. The original image has expired and needs to be re-uploaded.*
 
 While every effort was made to find data from the programme's websites, not all schools disclosed the starting salary of their graduates. However, I still managed to collect some data points to show it here. "Time to Earn" is derived by dividing the fees by the starting salary. This does not take into account the respective jurisdiction's tax nor the time value of money.
 
@@ -67,7 +67,7 @@ From the Top 20 schools, it appears:
 * Graduates from schools in the United States enjoy the highest employment salaries (>US$100,000) amongst the Top 20 schools. It comes at a hefty price, as most programmes are priced in the US$60,000 range.
 * The top "Value for Money" schools are in Norway and France.
 
-![Value for Money by Country](https://media.licdn.com/dms/image/C5612AQE0cKJVny17sg/article-inline_image-shrink_1500_2232/0/1637610518389?e=1727308800&v=beta&t=cb6_3hhg73iWIvHUHa4WwrmpMeh3_4pHVIS_uavbpes)
+> *Chart unavailable: value for money by country. The top Value for Money schools are in Norway and France. The original image has expired and needs to be re-uploaded.*
 
 I would opine that having a higher starting salary is better in the long run, because after repaying the cost of the programme's tuition fees, there's more to keep.
 
