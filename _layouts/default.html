@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{site.active_lang}}">
+{%- comment -%}
+  Page language: translated pages declare `lang:` in front matter, pages built from
+  per-language data declare `i18n: true`; everything else is English content.
+  The navbar and footer are always rendered in the active site language.
+{%- endcomment -%}
+{%- if page.lang -%}{%- assign page_lang = page.lang -%}
+{%- elsif page.i18n -%}{%- assign page_lang = site.active_lang -%}
+{%- else -%}{%- assign page_lang = "en" -%}{%- endif -%}
+<html lang="{{ page_lang }}">
 
 <head>
   <meta charset="UTF-8">
@@ -8,11 +16,17 @@
   <link href="{{ '/assets/css/fonts.css' | relative_url }}" rel="stylesheet">
   {% seo %}
   {% include custom_head.html %}
+  {% if page.layout == "post" or page.layout == "project" or page.layout == "publication" %}
+  <link rel="stylesheet" href="{{ '/assets/css/monokai.css' | relative_url }}">
+  {% endif %}
 </head>
 
 <body class="bg-white text-gray-700 dark:bg-gray-700 dark:text-slate-100">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   {% include navbar.html %}
+  <main id="main-content">
   {{ content }}
+  </main>
   {% include footer.html %}
 </body>
 

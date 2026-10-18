@@ -2,18 +2,19 @@
 layout: default
 ---
 
-<section class="container mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
+<section class="container mx-auto px-4 list-page">
+  {% include list_header.html %}
   {% if site.categories.size > 0 %}
-  <div class="flex flex-wrap justify-center border-gray-400 border-y mb-4 md:mb-12 ">
+  <nav aria-label="Blog categories" class="flex flex-wrap justify-center border-gray-400 border-y mb-4 md:mb-12 ">
     {% for category in site.categories %}
     {% assign category_name = category[0] %}
-    <a href="{{site.url}}/{{site.baseurl}}//category/{{category_name| replace: ' ', '-'| downcase}}"
-      aria-label="Category {{category_name}} page"
+    <a href="{{ '/category/' | append: category_name | replace: ' ', '-' | downcase | relative_url }}"
+      {% if category_name == page.title %}aria-current="page"{% endif %}
       class="block font-mulish hover:text-sky-400 p-4 {% if category_name == page.title %}font-black{% endif %}">
       {{ category_name | upcase }}
     </a>
     {% endfor %}
-  </div>
+  </nav>
   {% endif %}
 
   {% assign posts = page.posts | default: site.posts %}
@@ -27,9 +28,9 @@ layout: default
 
   <hr class="h-px my-12 bg-gray-400 border-0 dark:bg-gray-700">
 
-  <h1 class="text-2xl md:text-4xl font-bold text-gray-800">
+  <h2 class="text-2xl md:text-4xl font-bold text-gray-800">
     {% include t.html key="blog.more_articles" %}
-  </h1>
+  </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
     {% for post in rest_posts %}
     {% include post_card.html post=post %}

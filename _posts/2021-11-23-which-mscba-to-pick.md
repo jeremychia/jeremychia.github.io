@@ -15,11 +15,13 @@ I intend to keep this article brief to leave room for a more comprehensive explo
 
 In recent years, the number of Business Analytics programmes have risen substantially. Just in the US alone, the number of Analytics and Data Science Masters have been increasing from merely 10+ in 2012 to 310+ in 2021. The Advanced Institute for Analytics shares this nifty graphic below. I expect that this trend is the same for the rest of the world too.
 
-![Growth of MScBA Programs](https://media.licdn.com/dms/image/C5612AQGlnGzmmLV5-g/article-inline_image-shrink_1000_1488/0/1637330798543?e=1727308800&v=beta&t=0OzrI1MC_FcJvy_r-wmLD1TJt93kw4OUevpzu9VHBDQ)
+![Stacked area chart of cumulative US analytics and data science master's programmes from 2006 to 2021. Numbers stay near zero until about 2012, then climb to roughly 335 by 2021, with business analytics and data analytics programmes making up most of the growth.]({{ '/assets/images/posts/mscba-program-growth.png' | relative_url }})
+
+*The number of US analytics and data science masters programmes has grown from almost none before 2012 to over 300 in 2021 (source: Michael Rappa, Institute for Advanced Analytics).*
 
 With more schools and prospective students seeking to jump on the bandwagon - I'd imagine that there will be more people looking and comparing programmes. Hopefully, this resource adds to your list of materials to help prospective students decide which schools to apply to and eventually pick.
 
-# Approach and Basis
+## Approach and Basis
 
 For an initial study, I relied on publicly and readily available data. This comprises the [QS Business Analytics Rankings for 2022](https://www.topuniversities.com/university-rankings/business-masters-rankings/business-analytics/2022) and the respective programme's websites. For data from QS, I relied on published ranking indicators. No adjustments were made to their [methodology](https://www.topuniversities.com/business-masters-rankings/methodology).
 
@@ -29,11 +31,13 @@ I proceeded to extract specific attributes, where available, from the respective
 
 Nevertheless, here are some interesting points I found.
 
-# Findings
+## Findings
 
-## Singapore, France, and Canada have the most well-ranked programmes
+### Singapore, France, and Canada have the most well-ranked programmes
 
-![Average ranks of courses](https://media.licdn.com/dms/image/C5612AQEtIeTDm_ONtg/article-inline_image-shrink_1500_2232/0/1637331518710?e=1727308800&v=beta&t=w5y8uxOWu3S4cvu3__dmIClpM_wP_pUtucXl3E0PiNk)
+![World map of ranked programmes. Bubble size shows the number of programmes per country and colour shows the average overall score, from 33.80 to 69.05. The United States has 59 programmes, France 9, and Canada and Australia 4 each.]({{ '/assets/images/posts/mscba-world-map.png' | relative_url }})
+
+*Most ranked programmes are in the United States (59), while France, Singapore and Canada have the highest average scores.*
 
 While the average scores in Singapore (Average Score: 69.05), France (Average Score: 64.54), and Canada (Average Score: 63.93) were the highest, the United States (59 programmes) and the United Kingdom (18 programmes) have the most number of programmes ranked in US rankings. These top destinations have different strengths:
 
@@ -45,9 +49,13 @@ While the average scores in Singapore (Average Score: 69.05), France (Average Sc
 The launching of Business Analytics programmes is a recent phenomenon. The QS Ranking for this programme started only in 2019, with some of the most highly ranked programmes having begun only in 2016.
 This trend could be tied closely with governmental policies - the scale and scope. These policies determine the industrial focus and what ecosystem gets developed. Incorporating analytics, after all, has a very practical and application-based aspect to it. It depends on whether organisations are open to embracing a new way of analysing information. Singapore's "[Smart Nation](https://www.smartnation.gov.sg/about-smart-nation/transforming-singapore)" initiative - to incorporate data and technology into government operations, France's "[La French Tech](https://www.gouvernement.fr/en/la-french-tech)" - to spur the development of French tech start-ups, and Canada's [investment prioritisation](https://www.analyticsinsight.net/top-10-countries-leading-the-data-science-dominance-in-2021/) of data technologies all have a part to play in this.
 
-## Schools which are Thought Leaders Enjoy Better Employability
+### Schools which are Thought Leaders Enjoy Better Employability
 
 There is a moderate positive relationship between thought leadership and employability (R-square: 0.72) of the school's programmes.
+
+![Five scatter plots of employability against overall score, alumni outcomes, diversity, thought leadership and value for money, coloured by continent. Employability rises with overall score and thought leadership, while diversity and value for money show little pattern.]({{ '/assets/images/posts/mscba-employability-scatter.png' | relative_url }})
+
+*Employability rises with thought leadership (and with overall score), but shows little relationship with diversity or value for money.*
 
 It is no surprise that MIT's MBAn ranks top for "Thought Leadership" (#1, Score: 100) and has nearly the best "Employability" (#2, Score: 99.2). Their students engage in an [Analytics Capstone](https://www.analyticscapstone.mit.edu/project-archive/all-projects) where they perform and present their analytics projects on companies to the public realm.
 
@@ -55,9 +63,11 @@ The next that comes close is HEC-X's [MSc in Data Science](https://www.hec.edu/e
 
 Generally, when looking at schools, it'd be good to take a look at the professors that are affiliated with the course and their research interests. Often, these programmes have an option or require you to undertake a research project. That, too, contributes to the thought leadership of the programme.
 
-## Amongst the Top 20, Schools in the EU have the fastest ROI
+### Amongst the Top 20, Schools in the EU have the fastest ROI
 
-![Image to Earn](https://media.licdn.com/dms/image/C5612AQFnPZEr5CghRw/article-inline_image-shrink_1500_2232/0/1637610120315?e=1727308800&v=beta&t=TGWDoF3cODGF5C00-wflakSwd5rrfWJdCBxon_NbifI)
+![Scatter plots of time to earn, fees and salary in US dollars against each ranking score for the Top 20 programmes, coloured by continent. US programmes have the highest fees and salaries, while European programmes have lower fees and lower salaries.]({{ '/assets/images/posts/mscba-time-to-earn.png' | relative_url }})
+
+*US programmes cost the most and pay the most, while European programmes are cheaper and pay less, so their return on investment arrives sooner.*
 
 While every effort was made to find data from the programme's websites, not all schools disclosed the starting salary of their graduates. However, I still managed to collect some data points to show it here. "Time to Earn" is derived by dividing the fees by the starting salary. This does not take into account the respective jurisdiction's tax nor the time value of money.
 
@@ -67,13 +77,15 @@ From the Top 20 schools, it appears:
 * Graduates from schools in the United States enjoy the highest employment salaries (>US$100,000) amongst the Top 20 schools. It comes at a hefty price, as most programmes are priced in the US$60,000 range.
 * The top "Value for Money" schools are in Norway and France.
 
-![Value for Money by Country](https://media.licdn.com/dms/image/C5612AQE0cKJVny17sg/article-inline_image-shrink_1500_2232/0/1637610518389?e=1727308800&v=beta&t=cb6_3hhg73iWIvHUHa4WwrmpMeh3_4pHVIS_uavbpes)
+![Bar chart of average Value for Money score by country, from Norway at about 84 and France at about 80 down to Turkey at about 22.]({{ '/assets/images/posts/mscba-value-for-money.png' | relative_url }})
+
+*Norway and France lead on average value for money, and Turkey, Russia and China sit at the bottom.*
 
 I would opine that having a higher starting salary is better in the long run, because after repaying the cost of the programme's tuition fees, there's more to keep.
 
 That being said, I found that European schools generally had more scholarship options available. UK schools feature a broad array of school-based scholarships. For government scholarships - the UK Government's [Chevening Scholarship](https://www.chevening.org/apply/) (which closes early) or the French Government's [Eiffel Master Scholarship](https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence) are two places to start your search.
 
-# Concluding Thoughts
+## Concluding Thoughts
 
 Every programme has a slightly different slant. For example, some have a heavier focus on "Data Science", whereas others focus on "Business Analytics". The programmes at ESSEC-CS and ESCP also feature an "International Seminar" - a study mission to another city. So, in this regard, there are different dimensions to make this decision from when making your choice.
 

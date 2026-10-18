@@ -2,6 +2,7 @@
 layout: default
 title: Working With Me
 nav: true
+i18n: true
 nav_order: 5
 footer: true
 description: A working manual for teammates and collaborators.
@@ -69,8 +70,12 @@ description: A working manual for teammates and collaborators.
   .wm-tab:hover { color: #111827; }
   .wm-tab.active { border-bottom-color: #111827; color: #111827; font-weight: 600; }
 
-  .wm-compat-track { flex: 1; height: 8px; background: #e5e7eb; border-radius: 9999px; overflow: hidden; }
-  .wm-compat-fill  { height: 100%; border-radius: 9999px; background: #22c55e; transition: width 0.3s; width: 0%; }
+  .wm-compat-track { flex: 1; height: 10px; background: #e5e7eb; border: 1px solid #6b7280; border-radius: 9999px; overflow: hidden; }
+  .wm-compat-fill  { height: 100%; border-radius: 9999px; background: #15803d; transition: width 0.3s; width: 0%; }
+
+  .wm-tab-link { color: #1d4ed8; }
+  .wm-ok { color: #15803d; }
+  .wm-no { color: #b91c1c; }
 
   .wm-badge {
     flex-shrink: 0;
@@ -107,11 +112,15 @@ description: A working manual for teammates and collaborators.
   .dark .wm-bg-amber     { background: rgba(120,53,15,0.2); border-color: rgba(180,83,9,0.4); color: #fde68a; }
   .dark .wm-bg-amber *   { color: #fde68a !important; }
   .dark .wm-pill         { background: white; color: #1e293b; }
-  .dark .wm-chip         { background: #334155; color: #94a3b8; }
+  .dark .wm-chip         { background: #334155; color: #cbd5e1; }
   .dark .wm-tabs         { border-bottom-color: #334155; }
   .dark .wm-tab:hover    { color: white; }
   .dark .wm-tab.active   { border-bottom-color: white; color: white; }
-  .dark .wm-compat-track { background: #334155; }
+  .dark .wm-compat-track { background: #334155; border-color: #94a3b8; }
+  .dark .wm-compat-fill  { background: #4ade80; }
+  .dark .wm-tab-link     { color: #93c5fd; }
+  .dark .wm-ok           { color: #4ade80; }
+  .dark .wm-no           { color: #f87171; }
   .dark .wm-badge        { background: white; color: #1e293b; }
   .dark .wm-section-title { border-left-color: white; }
   .dark .wm-accent-dark  { border-left-color: white; }
@@ -156,14 +165,14 @@ description: A working manual for teammates and collaborators.
   <!-- Tabs -->
   <div>
     <div class="wm-tabs" role="tablist">
-      <button class="wm-tab active" data-tab="how-i-work"      role="tab" aria-selected="true">{{ wm.tabs.how_i_work }}</button>
-      <button class="wm-tab"        data-tab="values"          role="tab" aria-selected="false">{{ wm.tabs.values }}</button>
-      <button class="wm-tab"        data-tab="energisers"      role="tab" aria-selected="false">{{ wm.tabs.energisers }}</button>
-      <button class="wm-tab"        data-tab="working-with-me" role="tab" aria-selected="false">{{ wm.tabs.working_with_me }}</button>
+      <button class="wm-tab active" data-tab="how-i-work"      role="tab" id="tabbtn-how-i-work" aria-controls="tab-how-i-work" aria-selected="true" tabindex="0">{{ wm.tabs.how_i_work }}</button>
+      <button class="wm-tab"        data-tab="values"          role="tab" id="tabbtn-values" aria-controls="tab-values" aria-selected="false" tabindex="-1">{{ wm.tabs.values }}</button>
+      <button class="wm-tab"        data-tab="energisers"      role="tab" id="tabbtn-energisers" aria-controls="tab-energisers" aria-selected="false" tabindex="-1">{{ wm.tabs.energisers }}</button>
+      <button class="wm-tab"        data-tab="working-with-me" role="tab" id="tabbtn-working-with-me" aria-controls="tab-working-with-me" aria-selected="false" tabindex="-1">{{ wm.tabs.working_with_me }}</button>
     </div>
 
     <!-- Tab: How I Work -->
-    <div id="tab-how-i-work" role="tabpanel">
+    <div id="tab-how-i-work" role="tabpanel" aria-labelledby="tabbtn-how-i-work">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         {% for card in wm.how_i_work.cards %}
@@ -184,7 +193,7 @@ description: A working manual for teammates and collaborators.
             {% for point in card.points %}<li>{{ point }}</li>{% endfor %}
           </ul>
           <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #f3f4f6;">
-            <button class="wm-tab-link text-sm" style="color: #3b82f6; cursor: pointer; background: none; border: none; padding: 0;" data-target="{{ card.link_tab }}">{{ card.link_label }}</button>
+            <button class="wm-tab-link text-sm" style="cursor: pointer; background: none; border: none; padding: 0;" data-target="{{ card.link_tab }}">{{ card.link_label }}</button>
           </div>
         </div>
         {% endfor %}
@@ -205,7 +214,7 @@ description: A working manual for teammates and collaborators.
             </ul>
           </div>
           <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #f3f4f6;">
-            <button class="wm-tab-link text-sm" style="color: #3b82f6; cursor: pointer; background: none; border: none; padding: 0;" data-target="{{ wm.how_i_work.leader.link_tab }}">{{ wm.how_i_work.leader.link_label }}</button>
+            <button class="wm-tab-link text-sm" style="cursor: pointer; background: none; border: none; padding: 0;" data-target="{{ wm.how_i_work.leader.link_tab }}">{{ wm.how_i_work.leader.link_label }}</button>
           </div>
         </div>
 
@@ -213,7 +222,7 @@ description: A working manual for teammates and collaborators.
     </div>
 
     <!-- Tab: Values -->
-    <div id="tab-values" style="display: none;" role="tabpanel">
+    <div id="tab-values" style="display: none;" role="tabpanel" aria-labelledby="tabbtn-values">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6" style="margin-bottom: 2rem;">
 
         <div>
@@ -226,18 +235,18 @@ description: A working manual for teammates and collaborators.
 
         <div style="display: flex; flex-direction: column; gap: 1.5rem;">
           <div>
-            <h3 style="font-size: 1.125rem; font-weight: 600; color: #16a34a; margin-bottom: 0.75rem;">{{ wm.values.green_flags_title }}</h3>
+            <h3 class="wm-ok" style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">{{ wm.values.green_flags_title }}</h3>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
               {% for item in wm.values.green_flags %}
-              <li style="display: flex; align-items: flex-start; gap: 0.5rem;" class="text-sm text-gray-700"><span style="color: #22c55e; flex-shrink: 0; margin-top: 0.1rem;">✓</span>{{ item }}</li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;" class="text-sm text-gray-700"><span class="wm-ok" aria-hidden="true" style="flex-shrink: 0; margin-top: 0.1rem;">✓</span>{{ item }}</li>
               {% endfor %}
             </ul>
           </div>
           <div>
-            <h3 style="font-size: 1.125rem; font-weight: 600; color: #dc2626; margin-bottom: 0.75rem;">{{ wm.values.red_flags_title }}</h3>
+            <h3 class="wm-no" style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">{{ wm.values.red_flags_title }}</h3>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
               {% for item in wm.values.red_flags %}
-              <li style="display: flex; align-items: flex-start; gap: 0.5rem;" class="text-sm text-gray-700"><span style="color: #ef4444; flex-shrink: 0; margin-top: 0.1rem;">✗</span>{{ item }}</li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;" class="text-sm text-gray-700"><span class="wm-no" aria-hidden="true" style="flex-shrink: 0; margin-top: 0.1rem;">✗</span>{{ item }}</li>
               {% endfor %}
             </ul>
           </div>
@@ -252,21 +261,21 @@ description: A working manual for teammates and collaborators.
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" style="margin-bottom: 1.25rem;">
           {% for item in wm.values.compat_items %}
           <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
-            <input type="checkbox" class="flag-check" style="width: 1rem; height: 1rem; margin-top: 0.2rem; flex-shrink: 0; accent-color: #22c55e;">
+            <input type="checkbox" class="flag-check" style="width: 1rem; height: 1rem; margin-top: 0.2rem; flex-shrink: 0; accent-color: #15803d;">
             <span class="text-sm text-gray-700">{{ item }}</span>
           </label>
           {% endfor %}
         </div>
         <div style="display: flex; align-items: center; gap: 0.75rem;">
-          <div class="wm-compat-track"><div class="wm-compat-fill" id="compat-bar"></div></div>
-          <span class="text-sm" style="font-weight: 500;" id="compat-score">0 / {{ wm.values.compat_items | size }} match</span>
+          <div class="wm-compat-track" id="compat-track" role="progressbar" aria-label="{{ wm.values.compat_title | escape }}" aria-valuemin="0" aria-valuemax="{{ wm.values.compat_items | size }}" aria-valuenow="0" aria-valuetext="0 / {{ wm.values.compat_items | size }} match"><div class="wm-compat-fill" id="compat-bar"></div></div>
+          <span class="text-sm" style="font-weight: 500;" id="compat-score" role="status">0 / {{ wm.values.compat_items | size }} match</span>
         </div>
-        <p class="text-sm text-gray-500" id="compat-label" style="margin-top: 0.5rem;">{{ wm.values.compat_labels[0] }}</p>
+        <p class="text-sm text-gray-500" id="compat-label" role="status" style="margin-top: 0.5rem;">{{ wm.values.compat_labels[0] }}</p>
       </div>
     </div>
 
     <!-- Tab: Energisers -->
-    <div id="tab-energisers" style="display: none;" role="tabpanel">
+    <div id="tab-energisers" style="display: none;" role="tabpanel" aria-labelledby="tabbtn-energisers">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         <div class="wm-bg-green">
@@ -316,7 +325,7 @@ description: A working manual for teammates and collaborators.
     </div>
 
     <!-- Tab: Working With Me -->
-    <div id="tab-working-with-me" style="display: none;" role="tabpanel">
+    <div id="tab-working-with-me" style="display: none;" role="tabpanel" aria-labelledby="tabbtn-working-with-me">
       <div style="display: flex; flex-direction: column; gap: 1.5rem;">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -338,7 +347,7 @@ description: A working manual for teammates and collaborators.
           <h3 class="wm-section-title">{{ wm.working_with_me.manage_title }}</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {% for item in wm.working_with_me.manage %}
-            <div style="display: flex; align-items: flex-start; gap: 0.75rem;" class="text-sm text-gray-600"><span style="color: #22c55e; flex-shrink: 0; margin-top: 0.1rem;">✓</span>{{ item }}</div>
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;" class="text-sm text-gray-600"><span class="wm-ok" aria-hidden="true" style="flex-shrink: 0; margin-top: 0.1rem;">✓</span>{{ item }}</div>
             {% endfor %}
           </div>
         </div>
@@ -397,7 +406,7 @@ description: A working manual for teammates and collaborators.
         <p class="text-sm text-gray-700" style="margin: 0; font-weight: 500;">{{ q.question }}</p>
         <div style="border-top: 1px solid #e5e7eb; padding-top: 0.75rem; display: flex; flex-direction: column; gap: 0.375rem;">
           <p class="text-sm text-gray-500" style="margin: 0; font-style: italic;">{{ q.why }}</p>
-          <button class="wm-tab-link text-sm" style="color: #3b82f6; cursor: pointer; background: none; border: none; padding: 0; text-align: left;" data-target="{{ q.link_tab }}">{{ q.link_label }}</button>
+          <button class="wm-tab-link text-sm" style="cursor: pointer; background: none; border: none; padding: 0; text-align: left;" data-target="{{ q.link_tab }}">{{ q.link_label }}</button>
         </div>
       </div>
       {% endfor %}
@@ -416,6 +425,7 @@ description: A working manual for teammates and collaborators.
       var isActive = btn.dataset.tab === targetId;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      btn.setAttribute('tabindex', isActive ? '0' : '-1');
     });
     panelIds.forEach(function(id) {
       var el = document.getElementById(id);
@@ -425,6 +435,20 @@ description: A working manual for teammates and collaborators.
 
   tabs.forEach(function(btn) {
     btn.addEventListener('click', function() { activateTab(btn.dataset.tab); });
+    btn.addEventListener('keydown', function(e) {
+      var list = Array.prototype.slice.call(tabs);
+      var i = list.indexOf(btn);
+      var next = null;
+      if (e.key === 'ArrowRight') next = list[(i + 1) % list.length];
+      else if (e.key === 'ArrowLeft') next = list[(i - 1 + list.length) % list.length];
+      else if (e.key === 'Home') next = list[0];
+      else if (e.key === 'End') next = list[list.length - 1];
+      if (next) {
+        e.preventDefault();
+        activateTab(next.dataset.tab);
+        next.focus();
+      }
+    });
   });
 
   document.querySelectorAll('.wm-tab-link').forEach(function(link) {
@@ -437,6 +461,7 @@ description: A working manual for teammates and collaborators.
 
   var checks = document.querySelectorAll('.flag-check');
   var bar = document.getElementById('compat-bar');
+  var track = document.getElementById('compat-track');
   var scoreEl = document.getElementById('compat-score');
   var labelEl = document.getElementById('compat-label');
   var total = checks.length;
@@ -447,6 +472,10 @@ description: A working manual for teammates and collaborators.
     var pct = Math.round((checked / total) * 100);
     if (bar) bar.style.width = pct + '%';
     if (scoreEl) scoreEl.textContent = checked + ' / ' + total + ' match';
+    if (track) {
+      track.setAttribute('aria-valuenow', checked);
+      track.setAttribute('aria-valuetext', checked + ' / ' + total + ' match');
+    }
     if (labelEl && labels[checked]) labelEl.textContent = labels[checked];
   }
 

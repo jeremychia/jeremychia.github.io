@@ -1,18 +1,18 @@
 <div class="flex justify-center md:justify-start pt-2 gap-6">
   {% assign rrss = site.rrss %}
   {% if rrss.linkedin %}
-  <a class="transition hover:scale-110 duration-300" href="{{ rrss.linkedin }}" target="_blank">
-    <img class="h-6 w-6" src="{{'/assets/images/rrss/linkedin.svg' | relative_url }}" alt="Linkedin Icon">
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+    <img class="h-6 w-6" src="{{'/assets/images/rrss/linkedin.svg' | relative_url }}" alt="">
   </a>
   {% endif %}
   {% if rrss.github %}
-  <a class="transition hover:scale-110 duration-300" href="{{ rrss.github }}" target="_blank">
-    <img class="h-6 w-6" src="{{'/assets/images/rrss/github-mark.svg' | relative_url }}" alt="Github Icon">
+  <a class="transition hover:scale-110 duration-300" href="{{ rrss.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+    <img class="h-6 w-6" src="{{'/assets/images/rrss/github-mark.svg' | relative_url }}" alt="">
   </a>
   {% endif %}
   {% if rrss.email %}
-  <a class="transition hover:scale-110 duration-300" href="mailto:{{ rrss.email }}">
-    <img class="h-6 w-6" src="{{'/assets/images/rrss/email.svg' | relative_url }}" alt="Email Icon">
+  <a class="transition hover:scale-110 duration-300" href="mailto:{{ rrss.email }}" aria-label="Email Jeremy">
+    <img class="h-6 w-6" src="{{'/assets/images/rrss/email.svg' | relative_url }}" alt="">
   </a>
   {% endif %}
 </div>

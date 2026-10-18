@@ -20,11 +20,11 @@ personality:
     - label: "Caring"
       description: "Quietly invested. Shows care through reliability and honest feedback, not constant availability or warmth performance."
       color: "#22c55e"
-      text_color: "#16a34a"
+      text_color: "#15803d"
     - label: "Not expressive"
       description: "Prefers depth and directness to social performance or charm-led collaboration. Doesn't do small talk for its own sake."
       color: "#d1d5db"
-      text_color: "#9ca3af"
+      text_color: "#6b7280"
 
 tabs:
   how_i_work: "How I Work"
