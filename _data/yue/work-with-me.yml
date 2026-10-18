@@ -20,11 +20,11 @@ personality:
     - label: "關懷型"
       description: "默默投入。透過可靠性同誠實嘅回饋表達關心，而非表演式溫暖。"
       color: "#22c55e"
-      text_color: "#16a34a"
+      text_color: "#15803d"
     - label: "非表達型"
       description: "偏好深度同直接，而非社交表演。唔係為閒聊而閒聊。"
       color: "#d1d5db"
-      text_color: "#9ca3af"
+      text_color: "#6b7280"
 
 tabs:
   how_i_work: "工作方式"

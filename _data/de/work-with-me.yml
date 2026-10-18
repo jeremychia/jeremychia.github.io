@@ -20,11 +20,11 @@ personality:
     - label: "Fürsorglich"
       description: "Leise engagiert. Zeigt Fürsorge durch Zuverlässigkeit und ehrliches Feedback, nicht durch ständige Verfügbarkeit."
       color: "#22c55e"
-      text_color: "#16a34a"
+      text_color: "#15803d"
     - label: "Nicht expressiv"
       description: "Bevorzugt Tiefe und Direktheit gegenüber sozialem Auftreten. Kein Small Talk um des Small Talks willen."
       color: "#d1d5db"
-      text_color: "#9ca3af"
+      text_color: "#6b7280"
 
 tabs:
   how_i_work: "Arbeitsweise"
