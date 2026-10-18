@@ -19,7 +19,7 @@ In recent years, the number of Business Analytics programmes have risen substant
 
 With more schools and prospective students seeking to jump on the bandwagon - I'd imagine that there will be more people looking and comparing programmes. Hopefully, this resource adds to your list of materials to help prospective students decide which schools to apply to and eventually pick.
 
-# Approach and Basis
+## Approach and Basis
 
 For an initial study, I relied on publicly and readily available data. This comprises the [QS Business Analytics Rankings for 2022](https://www.topuniversities.com/university-rankings/business-masters-rankings/business-analytics/2022) and the respective programme's websites. For data from QS, I relied on published ranking indicators. No adjustments were made to their [methodology](https://www.topuniversities.com/business-masters-rankings/methodology).
 
@@ -29,9 +29,9 @@ I proceeded to extract specific attributes, where available, from the respective
 
 Nevertheless, here are some interesting points I found.
 
-# Findings
+## Findings
 
-## Singapore, France, and Canada have the most well-ranked programmes
+### Singapore, France, and Canada have the most well-ranked programmes
 
 > *Chart unavailable: average programme scores by country. Singapore (69.05), France (64.54) and Canada (63.93) score highest. The original image has expired and needs to be re-uploaded.*
 
@@ -45,7 +45,7 @@ While the average scores in Singapore (Average Score: 69.05), France (Average Sc
 The launching of Business Analytics programmes is a recent phenomenon. The QS Ranking for this programme started only in 2019, with some of the most highly ranked programmes having begun only in 2016.
 This trend could be tied closely with governmental policies - the scale and scope. These policies determine the industrial focus and what ecosystem gets developed. Incorporating analytics, after all, has a very practical and application-based aspect to it. It depends on whether organisations are open to embracing a new way of analysing information. Singapore's "[Smart Nation](https://www.smartnation.gov.sg/about-smart-nation/transforming-singapore)" initiative - to incorporate data and technology into government operations, France's "[La French Tech](https://www.gouvernement.fr/en/la-french-tech)" - to spur the development of French tech start-ups, and Canada's [investment prioritisation](https://www.analyticsinsight.net/top-10-countries-leading-the-data-science-dominance-in-2021/) of data technologies all have a part to play in this.
 
-## Schools which are Thought Leaders Enjoy Better Employability
+### Schools which are Thought Leaders Enjoy Better Employability
 
 There is a moderate positive relationship between thought leadership and employability (R-square: 0.72) of the school's programmes.
 
@@ -55,7 +55,7 @@ The next that comes close is HEC-X's [MSc in Data Science](https://www.hec.edu/e
 
 Generally, when looking at schools, it'd be good to take a look at the professors that are affiliated with the course and their research interests. Often, these programmes have an option or require you to undertake a research project. That, too, contributes to the thought leadership of the programme.
 
-## Amongst the Top 20, Schools in the EU have the fastest ROI
+### Amongst the Top 20, Schools in the EU have the fastest ROI
 
 > *Chart unavailable: return on investment for Top 20 programmes by region. Schools in the EU have the fastest return on investment. The original image has expired and needs to be re-uploaded.*
 
@@ -73,7 +73,7 @@ I would opine that having a higher starting salary is better in the long run, be
 
 That being said, I found that European schools generally had more scholarship options available. UK schools feature a broad array of school-based scholarships. For government scholarships - the UK Government's [Chevening Scholarship](https://www.chevening.org/apply/) (which closes early) or the French Government's [Eiffel Master Scholarship](https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence) are two places to start your search.
 
-# Concluding Thoughts
+## Concluding Thoughts
 
 Every programme has a slightly different slant. For example, some have a heavier focus on "Data Science", whereas others focus on "Business Analytics". The programmes at ESSEC-CS and ESCP also feature an "International Seminar" - a study mission to another city. So, in this regard, there are different dimensions to make this decision from when making your choice.
 

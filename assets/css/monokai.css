@@ -7,7 +7,7 @@
 }
 
 .highlight .c {
-  color: #75715e
+  color: #a39e8c
 }
 
 /* Comment */
@@ -43,22 +43,22 @@
 
 /* Punctuation */
 .highlight .cm {
-  color: #75715e
+  color: #a39e8c
 }
 
 /* Comment.Multiline */
 .highlight .cp {
-  color: #75715e
+  color: #a39e8c
 }
 
 /* Comment.Preproc */
 .highlight .c1 {
-  color: #75715e
+  color: #a39e8c
 }
 
 /* Comment.Single */
 .highlight .cs {
-  color: #75715e
+  color: #a39e8c
 }
 
 /* Comment.Special */
@@ -302,7 +302,7 @@
 
 /* Generic Heading & Diff Header */
 .highlight .gu {
-  color: #75715e;
+  color: #a39e8c;
 }
 
 /* Generic.Subheading & Diff Unified/Comment? */

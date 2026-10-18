@@ -9,7 +9,7 @@ I'm an accountant turned data practitioner. I’ve looked at finance teams’ pr
 
 In this piece, I reflect on learnings from driving finance transformation initiatives. I write this considering the perspective of finance transformation leads, or analysts, who are trying to drive change. While the anecdotes are more specific to finance transformation, some reflections are intended for application to other projects which involve organisational change. Many thanks to [Professor Benyayer](https://www.linkedin.com/in/louis-david-benyayer-aa14181/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3BegWnvOJzRmStYyBfOrr5gg%3D%3D) for the opportunity to collaborate.
 
-# Where are finance teams now?
+## Where are finance teams now?
 
 Finance teams are embracing change. There is a paradigm shift in how finance leaders position their teams. The change is from traditionally viewing finance teams as a compliance necessity to one that drives insights and harnesses data to create value. [PwC’s 2021 Pulse Survey](https://www.pwc.com/us/en/services/consulting/business-transformation/library/finance-effectiveness-benchmark-study.html) is telling: that 68% of CFOs in the US are investing in digital transformation.
 
@@ -23,13 +23,13 @@ Realistically, organisations may only be **using this data** for **descriptive**
 
 There is a tacit awareness that digital transformation brings benefits. The question is, how much, and how do teams get there? Finite resources (manpower, funding, etc.) point towards competing needs within an organisation. Finance transformation leads need to thread intentionally and cautiously.
 
-# What are the possibilities for finance teams?
+## What are the possibilities for finance teams?
 
 Transformation leads can harmonise this initiative with relevant Objectives and Key Results (OKR) within the company. Some examples include “improving scalability”, or “reducing manual touchpoints”. Initiatives positioned to address the organisation’s overarching OKRs most easily secure mandates.
 
 The improvements finance teams can consider in the space of financial transformation can be broadly grouped into two buckets. I discuss these with finance and data professionals, and summarise them below:
 
-## Reporting
+### Reporting
 
 Improve the time to report by adopting automation, reducing the need for manual actions and improving accuracy. For organisations with different accounting tools, a Finance Performance Management (FPM) tool like LucaNet, Jedox, and Anaplan helps with consolidation and ensures one source of truth (keeping data in one place).
 
@@ -37,7 +37,7 @@ For smaller organisations, I recommend configuring reports within the tool itsel
 
 In the subsequent and last section, I suggest some metrics to measure success.
 
-## Value Creation
+### Value Creation
 
 Create insights, and inform decisions using statistical methods or machine learning. Earlier I highlighted that finance teams play host to a substantial volume of data. These historical records can be used to understand seasonality, and trends, and inform future decisions.
 
@@ -56,7 +56,7 @@ Typically, I consider the volume of transactions to be consistent throughout the
 
 Metrics for value creation vary by the initiative. They typically involve increasing revenue, reducing cost, improving client experience, or improving internal efficiency. In one instance where I automated one of the month-end closing processes, we managed to half the amount of time spent by reducing manual work. This was 5 FTE days saved. Seeing quantifiable progress builds confidence.
 
-# How shall finance transformation leads continue winning mandates?
+## How shall finance transformation leads continue winning mandates?
 
 Ensure that at every step, business objectives are being met. Be certain that all stakeholders recognise the impacts and benefits as well. Be mindful that ultimately, the aims of financial reporting with the [Conceptual Framework for Financial Reporting](https://www.iasplus.com/en/standards/other/framework) should be met. This means that the information should be relevant, faithfully represented, and timely amongst others.
 
@@ -75,9 +75,9 @@ The tests can prevent errors from compounding. In one implementation, with the p
 
 There is even a possibility to go further to use distributions of revenue or expenses in previous months to ascertain that the results reported are within expectations.
 
-# The change at stake
+## The change at stake
 
-## Process changes
+### Process changes
 
 Acknowledging that finance transformation is an exercise of change management is essential. Consider too, that the persons undergoing this change have varied priorities. There are finance practitioners who are excited and ready to embrace change, but there are those who are resistant. At one point, the predominant chatter was about how [automation would replace accounting jobs](https://jgbc.fiu.edu/index.php/Home/article/download/233/182/#:~:text=According%20to%20their%20findings%2C%20accountants,Jobs%20Susceptible%20to%20Automation.). In implementing finance transformation, I walked into many projects having to first establish that the change coming is an exciting opportunity to reduce laborious work which finance teams did not enjoy so that the upsides could be focused on.
 
@@ -85,7 +85,7 @@ I find the ADKAR Change Management Model useful for considering how to approach 
 
 > *Diagram unavailable: the ADKAR change management model, used to plan how to support people through a change. The original image has expired and needs to be re-uploaded.*
 
-## People upskilling
+### People upskilling
 
 At the heart of the project, it is core to acknowledge individual actors’ roles in ensuring success. Their legitimate concerns, motivations, and sentiments are crucial. Investing in training people in new tools and ways of thinking provides assurance and keeps team members engaged.
 
@@ -95,7 +95,7 @@ Teams should also be prepared to invest more in employee training to bridge the 
 
 There is apprehension, but the effects are positive. There was an exchange which goes: *“What happens if we invest in developing our people and then they leave us?”* and the response *“What happens if we don’t, and they stay?”*.
 
-## Data Quality
+### Data Quality
 
 Data quality remains at the heart of finance transformation effectiveness. In the [IBM 2021 Global C-Suite Study](https://www.fm-magazine.com/news/2021/apr/data-quality-stresses-for-finance.html), 70% of leading CFOs say implementing enterprise-wide data standards is a top priority. These efforts to standardise data and improve quality will have positive spillover effects throughout the organisation.
 
@@ -103,7 +103,7 @@ For finance applications, building more (time) buffers to get data right is nece
 
 It is important to make data quality intentional and obvious. After all, the saying about data goes: “Garbage in, garbage out”.
 
-# A final note
+## A final note
 
 While the possibilities are limitless, solving pain points and business problems takes precedence over tools. In Gartner's analytics maturity model, different organisations naturally find themselves at different stages. There should not be a need to force a solution onto an unready team. A foundation must be built before progressing. An exaggerated antithesis is an organisation with messy data which wants to do predictive modelling. Pay close attention to data quality and the fundamentals. Be aware of what the tools can do and be intentional in the application of such tools.
 

@@ -16,6 +16,9 @@
   <link href="{{ '/assets/css/fonts.css' | relative_url }}" rel="stylesheet">
   {% seo %}
   {% include custom_head.html %}
+  {% if page.layout == "post" or page.layout == "project" or page.layout == "publication" %}
+  <link rel="stylesheet" href="{{ '/assets/css/monokai.css' | relative_url }}">
+  {% endif %}
 </head>
 
 <body class="bg-white text-gray-700 dark:bg-gray-700 dark:text-slate-100">
