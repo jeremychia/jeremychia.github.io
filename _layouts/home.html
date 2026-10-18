@@ -13,7 +13,11 @@ layout: default
       {{ page.main_content | markdownify }}
     </div>
 
-    <p class="mt-4 ">
+    <p class="mt-6">
+      <a class="hero-cta" href="{{ '/work-with-me' | relative_url }}">{% include t.html key="home.how_i_work_cta" %}</a>
+    </p>
+
+    <p class="mt-6">
       {% include t.html key="home.contact_me" %}
     </p>
 
@@ -51,7 +55,7 @@ layout: default
    link_key="home.see_more_publications"
 %}
 
-<section id="blog" class="container mx-auto px-4 md:px-0 flex flex-col items-center justify-center min-h-screen">
+<section id="blog" class="container mx-auto px-4 md:px-0 flex flex-col items-center justify-center">
   <div class="py-16">
     <h2 class="text-3xl font-bold text-center md:text-left">
       {% include t.html key="home.blog_title" %}
@@ -69,13 +73,18 @@ layout: default
   </div>
 </section>
 
-<section id="content" class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+<section id="content" class="container mx-auto flex flex-col items-center justify-center">
   <article class="prose mx-auto py-16">
     {{content}}
   </article>
 </section>
 
 <style>
+  /* Primary call to action in the hero */
+  a.hero-cta, a.hero-cta:hover { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 0.375rem; font-weight: 600; background: #1f2937; color: #ffffff; text-decoration: none; }
+  a.hero-cta:hover { background: #374151; }
+  .dark a.hero-cta, .dark a.hero-cta:hover { background: #f1f5f9; color: #1e293b; }
+  .dark a.hero-cta:hover { background: #ffffff; }
   /* Enlarge the dot hit area to 24x24px without changing the visible dot size */
   #dot-nav .dot { position: relative; }
   #dot-nav .dot::after { content: ""; position: absolute; inset: -6px; }
