@@ -12,6 +12,34 @@
 
 <!-- Dark mode styles (custom CSS since Tailwind dark: classes aren't compiled) -->
 <style>
+  /* Skip link and keyboard focus indicator */
+  .skip-link {
+    position: absolute;
+    left: 0.5rem;
+    top: -4rem;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    color: #1d4ed8;
+    border: 2px solid #1d4ed8;
+    border-radius: 0.375rem;
+  }
+  .skip-link:focus {
+    top: 0.5rem;
+  }
+  :focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+  }
+  .dark :focus-visible {
+    outline-color: #7dd3fc;
+  }
+  .dark .skip-link {
+    background: #1e293b;
+    color: #7dd3fc;
+    border-color: #7dd3fc;
+  }
+
   /* Dark mode color scheme */
   .dark body {
     background-color: #1e293b; /* slate-800 */
