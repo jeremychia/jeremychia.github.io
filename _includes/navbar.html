@@ -9,8 +9,8 @@
     </a>
 
     <!-- Mobile menu button -->
-    <button id="mobile-menu-toggle" class="md:hidden p-2" aria-label="Toggle menu">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <button id="mobile-menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg aria-hidden="true" focusable="false" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </button>
@@ -29,11 +29,11 @@
 
       <!-- Dark mode toggle -->
       <div class="px-2">
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="theme-toggle" aria-label="Dark mode" aria-pressed="false">
+          <svg aria-hidden="true" focusable="false" class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
           </svg>
-          <svg class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg aria-hidden="true" focusable="false" class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
           </svg>
         </button>
@@ -41,12 +41,12 @@
 
       {% if site.languages.size > 1 %}
       <div class="relative px-2">
-        <button id="lang-dropdown-toggle" class="flex items-center hover:text-sky-400" aria-label="Select language">
-          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="lang-dropdown-toggle" class="flex items-center hover:text-sky-400" aria-label="Select language" aria-expanded="false" aria-controls="lang-dropdown" aria-haspopup="true">
+          <svg aria-hidden="true" focusable="false" class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
           </svg>
           <span>{% if site.active_lang == 'yue' %}粵{% elsif site.active_lang == 'en' %}EN{% elsif site.active_lang == 'de' %}DE{% else %}{{ site.active_lang | upcase }}{% endif %}</span>
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg aria-hidden="true" focusable="false" class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
           </svg>
         </button>
@@ -71,11 +71,11 @@
           href="{{ p.url | relative_url }}">{{ nav_title | strip }}</a>
       {% endfor %}
       <div class="flex items-center gap-4 pt-4 border-t mt-4">
-        <button id="theme-toggle-mobile" aria-label="Toggle dark mode">
-          <svg class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="theme-toggle-mobile" aria-label="Dark mode" aria-pressed="false">
+          <svg aria-hidden="true" focusable="false" class="sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
           </svg>
-          <svg class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg aria-hidden="true" focusable="false" class="moon-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
           </svg>
         </button>
@@ -94,56 +94,67 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      const root = document.documentElement;
+
       // Mobile menu toggle
       const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
+      function setMobileMenu(open) {
+        mobileMenu.classList.toggle('hidden', !open);
+        mobileMenuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
       if (mobileMenuToggle && mobileMenu) {
         mobileMenuToggle.addEventListener('click', function() {
-          mobileMenu.classList.toggle('hidden');
+          setMobileMenu(mobileMenu.classList.contains('hidden'));
         });
       }
 
       // Language dropdown toggle
       const langDropdownToggle = document.getElementById('lang-dropdown-toggle');
       const langDropdown = document.getElementById('lang-dropdown');
+      function setLangDropdown(open) {
+        langDropdown.classList.toggle('hidden', !open);
+        langDropdownToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
       if (langDropdownToggle && langDropdown) {
         langDropdownToggle.addEventListener('click', function(e) {
           e.stopPropagation();
-          langDropdown.classList.toggle('hidden');
+          setLangDropdown(langDropdown.classList.contains('hidden'));
         });
         // Close dropdown when clicking outside
         document.addEventListener('click', function() {
-          langDropdown.classList.add('hidden');
+          setLangDropdown(false);
         });
       }
 
-      // Dark mode toggle (desktop)
-      const themeToggle = document.getElementById('theme-toggle');
-      if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
-          if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.theme = 'light';
-          } else {
-            document.documentElement.classList.add('dark');
-            localStorage.theme = 'dark';
-          }
-        });
-      }
+      // Escape closes open menus and returns focus to their toggle
+      document.addEventListener('keydown', function(e) {
+        if (e.key !== 'Escape') return;
+        if (langDropdown && !langDropdown.classList.contains('hidden')) {
+          setLangDropdown(false);
+          langDropdownToggle.focus();
+        }
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+          setMobileMenu(false);
+          mobileMenuToggle.focus();
+        }
+      });
 
-      // Dark mode toggle (mobile)
-      const themeToggleMobile = document.getElementById('theme-toggle-mobile');
-      if (themeToggleMobile) {
-        themeToggleMobile.addEventListener('click', function() {
-          if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.theme = 'light';
-          } else {
-            document.documentElement.classList.add('dark');
-            localStorage.theme = 'dark';
-          }
-        });
+      // Dark mode toggles (desktop and mobile)
+      const themeToggles = [document.getElementById('theme-toggle'), document.getElementById('theme-toggle-mobile')].filter(Boolean);
+      function syncThemeToggles() {
+        const isDark = root.classList.contains('dark');
+        themeToggles.forEach(function(btn) { btn.setAttribute('aria-pressed', isDark ? 'true' : 'false'); });
       }
+      syncThemeToggles();
+      themeToggles.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const goDark = !root.classList.contains('dark');
+          root.classList.toggle('dark', goDark);
+          try { localStorage.theme = goDark ? 'dark' : 'light'; } catch (err) {}
+          syncThemeToggles();
+        });
+      });
     });
   </script>
 </nav>
