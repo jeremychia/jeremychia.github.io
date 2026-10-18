@@ -15,6 +15,15 @@ main_content: >
     at Vinted. Berlin-based 🇩🇪, from Singapore 🇸🇬.
 footer: false
 permalink: /
+results:
+  title: "Work"
+  intro: "A few things I've built, and what came of them:"
+  headers: ["Where", "What we built", "What happened"]
+  rows:
+    - ["**Vinted**", "Risk management framework for carrier billing", "€1.6M in overcharges caught"]
+    - ["**Vinted**", "Testing framework with materiality thresholds", "Misstatement risk down from €40M to €4M"]
+    - ["**Tourlane**", "Automated finance reporting pipeline", "5 FTE days/month freed up"]
+    - ["**LucaNet**", "Finance transformation for APAC listed companies", "11 projects delivered"]
 ---
 
 ## What I do
@@ -26,19 +35,6 @@ My background in accounting helps me understand what finance teams actually need
 Increasingly, the part I care about most isn't the pipeline itself but making sure the people around it understand *why* it works the way it does — through documentation, code review, or just explaining my reasoning instead of handing over an answer. If you're curious what that looks like day to day, I wrote up [how I work]({{ "/work-with-me" | relative_url }}).
 
 **Currently:** Senior Analytics Engineer @ Vinted
-
----
-
-## Work
-
-A few things I've built, and what came of them:
-
-| Where | What we built | What happened |
-|-------|---------------|---------------|
-| **Vinted** | Risk management framework for carrier billing | €1.6M in overcharges caught |
-| **Vinted** | Testing framework with materiality thresholds | Misstatement risk down from €40M to €4M |
-| **Tourlane** | Automated finance reporting pipeline | 5 FTE days/month freed up |
-| **LucaNet** | Finance transformation for APAC listed companies | 11 projects delivered |
 
 ---
 
