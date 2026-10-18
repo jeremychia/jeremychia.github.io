@@ -1,16 +1,22 @@
 ---
 layout: default
 ---
-<section class="container mx-auto pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+<section class="container mx-auto px-4 list-page">
+  {% include list_header.html %}
   {% if content and content != "" %}
   <div class="prose mx-auto pb-12">
     {{ content }}
   </div>
   {% endif %}
+  {% assign lead = site.projects | where: "featured", true | first %}
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+    {% if lead %}
+    {% include item_card.html item=lead featured=true %}
+    {% endif %}
     {% for project in site.projects %}
+    {% unless lead and project.url == lead.url %}
     {% include item_card.html item=project %}
+    {% endunless %}
     {% endfor %}
   </div>
 </section>
-
