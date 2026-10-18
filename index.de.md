@@ -12,6 +12,15 @@ main_content: >
 footer: false
 permalink: /
 lang: de
+results:
+  title: "Erfahrung"
+  intro: "Projekte, an denen ich mitgearbeitet habe:"
+  headers: ["Unternehmen", "Was wir gebaut haben", "Ergebnis"]
+  rows:
+    - ["**Vinted**", "Risikomanagement-Framework für Carrier-Abrechnung", "€1,6M Überberechnung erkannt"]
+    - ["**Vinted**", "Test-Framework mit Wesentlichkeitsgrenzen", "Fehlerrisiko von €40M auf €4M reduziert"]
+    - ["**Tourlane**", "Automatisierte Finanzberichterstattung", "5 Personentage/Monat eingespart"]
+    - ["**LucaNet**", "Finanztransformation für börsennotierte APAC-Unternehmen", "11 Projekte abgeschlossen"]
 ---
 
 ## Was ich mache
@@ -21,19 +30,6 @@ Ich arbeite an der Schnittstelle von Data Engineering und Finanzen — ich baue 
 Mein Hintergrund im Rechnungswesen hilft mir zu verstehen, was Finanzteams wirklich brauchen. Meine Engineering-Fähigkeiten helfen mir, es zu bauen.
 
 **Aktuell:** Senior Analytics Engineer @ Vinted
-
----
-
-## Erfahrung
-
-Projekte, an denen ich mitgearbeitet habe:
-
-| Unternehmen | Was wir gebaut haben | Ergebnis |
-|-------------|---------------------|----------|
-| **Vinted** | Risikomanagement-Framework für Carrier-Abrechnung | €1,6M Überberechnung erkannt |
-| **Vinted** | Test-Framework mit Wesentlichkeitsgrenzen | Fehlerrisiko von €40M auf €4M reduziert |
-| **Tourlane** | Automatisierte Finanzberichterstattung | 5 Personentage/Monat eingespart |
-| **LucaNet** | Finanztransformation für börsennotierte APAC-Unternehmen | 11 Projekte abgeschlossen |
 
 ---
 
