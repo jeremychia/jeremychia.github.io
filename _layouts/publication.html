@@ -12,7 +12,7 @@ layout: default
 
     <div class="my-4">
       {% for tag in page.tags %}
-      <span class="font-mulish text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">#{{ tag | xml_escape }}</span>
+      <span class="pub-tag font-mulish text-sm px-2 py-1 rounded">#{{ tag | xml_escape }}</span>
       {% endfor %}
     </div>
 

@@ -44,6 +44,8 @@
       scroll-behavior: auto !important;
     }
   }
+  .pub-tag { color: #4b5563; background-color: #f3f4f6; }
+  .dark .pub-tag { color: #cbd5e1; background-color: #334155; }
   :focus-visible {
     outline: 2px solid #1d4ed8;
     outline-offset: 2px;
@@ -93,6 +95,11 @@
     background-color: #334155 !important;
   }
   
+  /* Subtle card hover in dark mode (keeps muted text >= 4.5:1) */
+  .dark .hover\:bg-gray-50:hover {
+    background-color: #273449 !important;
+  }
+
   .dark .shadow-lg {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.2) !important;
   }
