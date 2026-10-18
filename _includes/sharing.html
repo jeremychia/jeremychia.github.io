@@ -1,6 +1,6 @@
 <div class="sharing-buttons flex flex-wrap gap-1 justify-center ">
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
+    target="_blank" rel="noopener noreferrer"
     href="https://facebook.com/sharer/sharer.php?u={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
     aria-label="Share on Facebook">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -12,8 +12,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="https://twitter.com/intent/tweet?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&text={{ page.title }}"
+    target="_blank" rel="noopener noreferrer"
+    href="https://twitter.com/intent/tweet?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&text={{ page.title | url_encode }}"
     aria-label="Share on Twitter">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -24,8 +24,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | uri_escape | append:site.baseurl | append: page.url }}&title={{ page.title }}&summary={{ page.title }}&source={{ site.url | uri_escape }}"
+    target="_blank" rel="noopener noreferrer"
+    href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | uri_escape | append:site.baseurl | append: page.url }}&title={{ page.title | url_encode }}&summary={{ page.title | url_encode }}&source={{ site.url | uri_escape }}"
     aria-label="Share on Linkedin">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -36,8 +36,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="https://pinterest.com/pin/create/button/?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&media={{ site.url | uri_escape }}&description={{ page.title }}"
+    target="_blank" rel="noopener noreferrer"
+    href="https://pinterest.com/pin/create/button/?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&media={{ site.url | uri_escape }}&description={{ page.title | url_encode }}"
     aria-label="Share on Pinterest" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -48,8 +48,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="https://reddit.com/submit/?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&resubmit=true&title={{ page.title }}"
+    target="_blank" rel="noopener noreferrer"
+    href="https://reddit.com/submit/?url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}&resubmit=true&title={{ page.title | url_encode }}"
     aria-label="Share on Reddit" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -60,8 +60,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="https://wa.me/?text={{ page.title | uri_escape | append: '%20' | append: site.url }}"
+    target="_blank" rel="noopener noreferrer"
+    href="https://wa.me/?text={{ page.title | url_encode | append: '%20' | append: site.url }}"
     aria-label="Share on Whatsapp" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -72,8 +72,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="https://telegram.me/share/url?text={{ page.title | uri_escape }}&url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
+    target="_blank" rel="noopener noreferrer"
+    href="https://telegram.me/share/url?text={{ page.title | url_encode }}&url={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
     aria-label="Share on Telegram" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">
@@ -84,8 +84,8 @@
     </svg>
   </a>
   <a class="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-2 rounded-full text-white border-slate-600 bg-slate-600 hover:bg-slate-700 hover:border-slate-700"
-    target="_blank" rel="noopener"
-    href="mailto:?subject={{ page.title | uri_escape }}&body={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
+    target="_blank" rel="noopener noreferrer"
+    href="mailto:?subject={{ page.title | url_encode }}&body={{ site.url | uri_escape | append: site.baseurl | append: page.url }}"
     aria-label="Share by Email" draggable="false">
     <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       class="w-5 h-5">

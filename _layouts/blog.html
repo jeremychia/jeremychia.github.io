@@ -5,16 +5,16 @@ layout: default
 <section class="container mx-auto px-4 list-page">
   {% include list_header.html %}
   {% if site.categories.size > 0 %}
-  <div class="flex flex-wrap justify-center border-gray-400 border-y mb-4 md:mb-12 ">
+  <nav aria-label="Blog categories" class="flex flex-wrap justify-center border-gray-400 border-y mb-4 md:mb-12 ">
     {% for category in site.categories %}
     {% assign category_name = category[0] %}
     <a href="{{ '/category/' | append: category_name | replace: ' ', '-' | downcase | relative_url }}"
-      aria-label="Category {{category_name}} page"
+      {% if category_name == page.title %}aria-current="page"{% endif %}
       class="block font-mulish hover:text-sky-400 p-4 {% if category_name == page.title %}font-black{% endif %}">
       {{ category_name | upcase }}
     </a>
     {% endfor %}
-  </div>
+  </nav>
   {% endif %}
 
   {% assign posts = page.posts | default: site.posts %}
