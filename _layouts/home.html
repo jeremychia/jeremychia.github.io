@@ -5,9 +5,10 @@ layout: default
 <section id="main" class="flex flex-col md:flex-row items-center justify-center py-16 md:h-screen border-b-2">
   <div class="md:mx-2">
     <img class="object-cover w-full h-full sm:w-80 sm:h-80 sm:rounded-full" src="{{ page.image | relative_url }}"
-      alt="{{ page.description }}" loading="lazy" decoding="async">
+      alt="{{ page.image_alt | default: 'Portrait of Jeremy Chia, smiling, wearing glasses and a brown batik shirt' }}" decoding="async">
   </div>
-  <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left mt-6 md:mt-0">
+  <div class="mx-4 w-4/5 md:w-2/5 text-center md:text-left mt-6 md:mt-0">
+    <h1 class="text-3xl font-bold mb-4">{{ page.title }}</h1>
     <div class="prose prose-h1:mb-1">
       {{ page.main_content | markdownify }}
     </div>
@@ -57,7 +58,7 @@ layout: default
     </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16">
       {% for post in site.posts limit:3 %}
-      {% include post_card.html post=post %}
+      {% include post_card.html post=post heading="h3" %}
       {% endfor %}
     </div>
     <div class="pt-4 text-center">
@@ -73,6 +74,12 @@ layout: default
     {{content}}
   </article>
 </section>
+
+<style>
+  /* Enlarge the dot hit area to 24x24px without changing the visible dot size */
+  #dot-nav .dot { position: relative; }
+  #dot-nav .dot::after { content: ""; position: absolute; inset: -6px; }
+</style>
 
 <div id="dot-nav" class="hidden md:block fixed left-0 top-1/2 transform -translate-y-1/2 space-y-4 bg-white/80 rounded-r-lg p-4" role="navigation" aria-label="Page section navigation">
   <a href="#main" aria-label="Jump to main section"
@@ -119,8 +126,9 @@ layout: default
     }
 
     function smoothScroll(target) {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       document.querySelector(target).scrollIntoView({
-        behavior: 'smooth'
+        behavior: reduceMotion ? 'auto' : 'smooth'
       });
     }
 
