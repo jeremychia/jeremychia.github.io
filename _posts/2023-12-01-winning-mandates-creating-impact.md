@@ -19,7 +19,7 @@ Finance functions rely heavily on data. While traditionally, the associations ar
 
 Realistically, organisations may only be **using this data** for **descriptive** analytics and occasionally **diagnostic** analytics - think reporting, and the occasional drill-down for insights. Accenture reports that while [62% of CFOs are seeing more demand for insight from financial data, 53% worry that finance is too reactive](https://www.accenture.com/cl-es/insightsnew/operations/finance-powerhouse). There is more potential in the accumulated data which has yet to be realised.
 
-![Gartner's analytics maturity model](https://media.licdn.com/dms/image/D4E12AQHVeVYjFEQXMw/article-inline_image-shrink_1000_1488/0/1701421504483?e=1727308800&v=beta&t=x5VmeccuI9MtkNMSZExX5AcD81u9wLyQjT3zRnsmWOU)
+> *Diagram unavailable: Gartner's analytics maturity model, from descriptive and diagnostic analytics through to more advanced stages. Most finance teams sit at the descriptive and diagnostic stages. The original image has expired and needs to be re-uploaded.*
 
 There is a tacit awareness that digital transformation brings benefits. The question is, how much, and how do teams get there? Finite resources (manpower, funding, etc.) point towards competing needs within an organisation. Finance transformation leads need to thread intentionally and cautiously.
 
@@ -83,7 +83,7 @@ Acknowledging that finance transformation is an exercise of change management is
 
 I find the ADKAR Change Management Model useful for considering how to approach the situation. To acknowledge hesitation or resistance, I found [Kübler Ross' Change Curve Model](https://www.taylorfrancis.com/books/mono/10.4324/9780203010495/death-dying-elisabeth-k%C3%BCbler-ross) to be a good way to approach the situation empathetically.
 
-![ADKAR Change Management Mode](https://media.licdn.com/dms/image/D4E12AQGXRZNExj3weA/article-inline_image-shrink_1500_2232/0/1701421604436?e=1727308800&v=beta&t=04qCLP5yVdmwn4t_Ex2ptRw8llypJTOw7yNl14PMZEE)
+> *Diagram unavailable: the ADKAR change management model, used to plan how to support people through a change. The original image has expired and needs to be re-uploaded.*
 
 ## People upskilling
 
