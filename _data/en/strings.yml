@@ -10,10 +10,10 @@ home:
   publications_title: "Research"
   see_more_publications: "More Research →"
 nav:
-  projects: "Work"
-  speaking: "Talks"
+  projects: "Projects"
+  speaking: "Speaking"
   research: "Research"
-  blog: "Writing"
+  blog: "Blog"
   work-with-me: "Working With Me"
 footer:
   call_to_action: "Let's connect:"
