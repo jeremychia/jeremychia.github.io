@@ -20,10 +20,10 @@
       {% for item in include.collection limit:include.limit %}
         {% if include.featured_only %}
           {% if item.featured %}
-            {% include item_card.html item=item %}
+            {% include item_card.html item=item heading="h3" %}
           {% endif %}
         {% else %}
-          {% include item_card.html item=item %}
+          {% include item_card.html item=item heading="h3" %}
         {% endif %}
       {% endfor %}
     </div>

@@ -4,7 +4,7 @@
     <p class="font-mulish text-gray-500 mt-4 mb-2 text-sm">
       {{ include.post.categories[0] | upcase }}
     </p>
-    <h2 class="text-xl hover:underline font-bold my-2 text-gray-800">{{include.post.title}}</h2>
+    {% assign card_h = include.heading | default: "h2" %}<{{ card_h }} class="text-xl hover:underline font-bold my-2 text-gray-800">{{include.post.title}}</{{ card_h }}>
     <div class="flex-grow"></div>
     <span class="font-mulish text-sm text-gray-500 mt-6">
       {{ include.post.date | date: "%-d %B %Y" }}
