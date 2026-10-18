@@ -44,6 +44,12 @@
       scroll-behavior: auto !important;
     }
   }
+  /* Button row for project/talk links */
+  .action-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  a.action-link, a.action-link:hover { display: inline-block; padding: 0.5rem 1.25rem; border-radius: 0.375rem; font-weight: 600; text-decoration: none; background: #1f2937; color: #ffffff; }
+  a.action-link:hover { background: #374151; }
+  .dark a.action-link, .dark a.action-link:hover { background: #f1f5f9; color: #1e293b; }
+  .dark a.action-link:hover { background: #ffffff; }
   .pub-tag { color: #4b5563; background-color: #f3f4f6; }
   .dark .pub-tag { color: #cbd5e1; background-color: #334155; }
   :focus-visible {
