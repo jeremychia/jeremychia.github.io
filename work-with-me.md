@@ -2,6 +2,7 @@
 layout: default
 title: Working With Me
 nav: true
+i18n: true
 nav_order: 5
 footer: true
 description: A working manual for teammates and collaborators.
