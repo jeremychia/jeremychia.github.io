@@ -1,9 +1,9 @@
 ---
 layout: project
 title: Test Smarter, Not Harder
-image: /assets/images/talks/data-makers-fest-2026.jpg
-image_alt: Jeremy Chia speaking on stage at Data Makers Fest 2026, holding a slide clicker and wearing a speaker badge
-category: Data Makers Fest 2026
+image: https://img.youtube.com/vi/tNZMm4KTjTc/maxresdefault.jpg
+image_alt: Title slide for the talk at Forward Data Conference, with Jeremy Chia and Justina Šakalytė
+category: Forward Data Conference
 video: https://www.youtube.com/watch?v=tNZMm4KTjTc
 tags:
   - dbt
@@ -14,6 +14,10 @@ tags:
 Running every data test on every run sounds safe. In practice it means constant alerts, missed deadlines and a team that stops trusting its own alarms. At Vinted, we sorted our finance pipeline tests by business impact and how often they fail, then ran each group differently. The idea comes from materiality, a concept from accounting.
 
 I gave this talk with my colleague Justina Šakalytė at Forward Data Conference, and again at [Data Makers Fest 2026](https://www.datamakersfest.com/speakers) in Porto. We also wrote it up together for Vinted Engineering.
+
+![Jeremy Chia speaking on stage at Data Makers Fest 2026, holding a slide clicker and wearing a speaker badge]({{ "/assets/images/talks/data-makers-fest-2026.jpg" | relative_url }})
+
+*At Data Makers Fest 2026.*
 
 ## The Problem
 
