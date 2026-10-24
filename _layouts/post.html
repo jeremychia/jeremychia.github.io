@@ -14,6 +14,11 @@ layout: default
     {% assign words = content | number_of_words %}
     <p class="text-sm font-mulish">{{ page.author }} • <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time> • {% if words < 360 %}1 min{% else %}{{ words | divided_by: 180 }} mins{% endif %}</p>
 
+    {% assign now_s = 'now' | date: '%s' | plus: 0 %}{% assign post_s = page.date | date: '%s' | plus: 0 %}{% assign age_seconds = now_s | minus: post_s %}
+    {% if age_seconds > 63072000 %}
+    <p class="post-age-note font-mulish text-sm">Written in {{ page.date | date: "%B %Y" }}. Figures, rankings and links may have changed since.</p>
+    {% endif %}
+
     <img class="mt-0" src="{{page.image | relative_url}}" alt="{{page.title}}">
 
     <div class="my-6">
