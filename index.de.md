@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Senior Analytics Engineer | Wirtschaftsprüfer
+title: Senior Analytics Engineer | CGMA
 description: >-
-  Vom Wirtschaftsprüfer zum Analytics Engineer. Ich baue Datentools, mit denen Finanzteams ihre eigenen Zahlen prüfen können.
+  Vom Management Accountant (CGMA) zum Analytics Engineer. Ich baue Datentools, mit denen Finanzteams ihre eigenen Zahlen prüfen können.
 image: /assets/images/jeremy-batik-brown-square.jpg
 main_content: >
-    Hallo, ich bin Jeremy 👋 Ich habe als **Wirtschaftsprüfer** angefangen. Heute arbeite ich als **Analytics Engineer**.
+    Hallo, ich bin Jeremy 👋 Ich habe als **Management Accountant** angefangen und trage den Titel **CGMA**. Heute arbeite ich als **Analytics Engineer**.
 
 
     Finanzzahlen entscheiden über echte Dinge. Sie bestimmen, was ein Team als Nächstes tut und was ein Unternehmen berichtet. Oft können nur wenige Menschen prüfen, ob diese Zahlen stimmen. Ich baue die Pipelines, Tests und Dashboards, mit denen alle anderen auch prüfen können.

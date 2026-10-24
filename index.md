@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Senior Analytics Engineer | Chartered Accountant
+title: Senior Analytics Engineer | CGMA
 description: >-
-  Chartered Accountant turned Analytics Engineer. I build data tools that let finance teams check their own numbers.
+  Accountant (CGMA) turned Analytics Engineer. I build data tools that let finance teams check their own numbers.
 image: /assets/images/jeremy-batik-brown-square.jpg
 main_content: >
-    Hi, I'm Jeremy 👋 I trained as a **Chartered Accountant**. Now I work as an **Analytics Engineer**.
+    Hi, I'm Jeremy 👋 I trained as an **accountant** and hold the **CGMA** designation. Now I work as an **Analytics Engineer**.
 
 
     Finance numbers decide real things. They decide what a team does next and what
