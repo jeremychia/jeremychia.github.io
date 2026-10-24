@@ -2,7 +2,11 @@
 layout: project
 title: Test Smarter, Not Harder
 image: https://img.youtube.com/vi/tNZMm4KTjTc/maxresdefault.jpg
+image_alt: Title slide for the talk at Forward Data Conference, with Jeremy Chia and Justina Šakalytė
 category: Forward Data Conference
+venues:
+  - Forward Data Conference
+  - Data Makers Fest 2026
 video: https://www.youtube.com/watch?v=tNZMm4KTjTc
 tags:
   - dbt
@@ -10,7 +14,16 @@ tags:
   - risk-management
 ---
 
-How we transformed data testing at Vinted from reactive firefighting to a proactive, risk-based framework using materiality concepts from accounting.
+Running every data test on every run sounds safe. In practice it means constant alerts, missed deadlines and a team that stops trusting its own alarms. At Vinted, we sorted our finance pipeline tests by business impact and how often they fail, then ran each group differently. The idea comes from materiality, a concept from accounting.
+
+I gave this talk twice. Justina Šakalytė and I also wrote it up together for Vinted Engineering.
+
+- **Forward Data Conference**, with my colleague Justina Šakalytė. [Watch the talk](https://www.youtube.com/watch?v=tNZMm4KTjTc)
+- **Data Makers Fest 2026**, Porto. [Speaker page](https://www.datamakersfest.com/speakers)
+
+![Jeremy Chia speaking on stage at Data Makers Fest 2026, holding a slide clicker and wearing a speaker badge]({{ "/assets/images/talks/data-makers-fest-2026.jpg" | relative_url }})
+
+*At Data Makers Fest 2026.*
 
 ## The Problem
 

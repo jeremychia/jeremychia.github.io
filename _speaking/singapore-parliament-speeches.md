@@ -1,7 +1,8 @@
 ---
 layout: project
 title: Building a Structured Dataset of Singapore's Parliamentary Speeches
-image: https://img.youtube.com/vi/QHS05Iafsqo/maxresdefault.jpg
+image: /assets/images/talks/par-leh-mate-topics.png
+image_alt: The Topics and Questions page of Par-leh-Mate, with stacked bar charts of speeches by topic and questions by ministry, coloured by party
 category: MDS Fest 3.0
 video: https://www.youtube.com/watch?v=QHS05Iafsqo
 tags:

@@ -6,13 +6,18 @@ layout: default
   <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
     <div class="pb-4">
       <a href="{{ '/category/' | append: page.categories[0] | replace: ' ', '-' | downcase | relative_url }}"
-        class="no-underline font-mulish text-sm hover:text-sky-400 text-gray-500">
-        {{ page.categories[0] | upcase }}
+        class="venue-pill">
+        {{ page.categories[0] | capitalize }}
       </a>
     </div>
     <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
     {% assign words = content | number_of_words %}
     <p class="text-sm font-mulish">{{ page.author }} • <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time> • {% if words < 360 %}1 min{% else %}{{ words | divided_by: 180 }} mins{% endif %}</p>
+
+    {% assign now_s = 'now' | date: '%s' | plus: 0 %}{% assign post_s = page.date | date: '%s' | plus: 0 %}{% assign age_seconds = now_s | minus: post_s %}
+    {% if age_seconds > 63072000 %}
+    <p class="post-age-note font-mulish text-sm">Written in {{ page.date | date: "%B %Y" }}. Figures, rankings and links may have changed since.</p>
+    {% endif %}
 
     <img class="mt-0" src="{{page.image | relative_url}}" alt="{{page.title}}">
 
