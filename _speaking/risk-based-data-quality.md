@@ -3,7 +3,10 @@ layout: project
 title: Test Smarter, Not Harder
 image: https://img.youtube.com/vi/tNZMm4KTjTc/maxresdefault.jpg
 image_alt: Title slide for the talk at Forward Data Conference, with Jeremy Chia and Justina Šakalytė
-category: Forward Data Conference & Data Makers Fest 2026
+category: Forward Data Conference
+venues:
+  - Forward Data Conference
+  - Data Makers Fest 2026
 video: https://www.youtube.com/watch?v=tNZMm4KTjTc
 tags:
   - dbt

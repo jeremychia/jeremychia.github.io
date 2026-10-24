@@ -7,6 +7,10 @@ layout: default
   <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
     <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
 
+    {% if page.venues %}
+    <p class="venue-pills">{% for v in page.venues %}<span class="venue-pill">{{ v }}</span>{% endfor %}</p>
+    {% endif %}
+
     {% if page.links or page.video %}
     <p class="action-links">
       {% if page.video %}<a class="action-link" href="{{ page.video }}">Watch the talk on YouTube &rarr;</a>{% endif %}
