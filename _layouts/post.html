@@ -7,7 +7,7 @@ layout: default
     <div class="pb-4">
       <a href="{{ '/category/' | append: page.categories[0] | replace: ' ', '-' | downcase | relative_url }}"
         class="venue-pill">
-        {{ page.categories[0] }}
+        {{ page.categories[0] | capitalize }}
       </a>
     </div>
     <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>
