@@ -33,7 +33,7 @@ This begs the question - does giving out *"free"* money bring tangible benefits 
 
 ## Taking a Page out of Alibaba and Tencent's Playbook
 
-While e-*Angbaos* are new in Singapore, China's Alibaba and Tencent have began marketing e-*Angbaos* all the way back since 2015. Unsurprisingly, China's internet companies have invented other campaigns to raise brand awareness.
+While e-*Angbaos* are new in Singapore, China's Alibaba and Tencent have begun marketing e-*Angbaos* all the way back since 2015. Unsurprisingly, China's internet companies have invented other campaigns to raise brand awareness.
 
 1. "[Weibo and Alipay's Hongbao Campaign Gone Viral](https://www.chinainternetwatch.com/12182/weibo-alipay-hongbao-2015/)" - China Internet Watch, Feb 4, 2015
 2. "[Taking electronic lai see to the next level](https://www.scmp.com/news/china/society/article/2066525/taking-electronic-lai-see-giving-next-level)" - South China Morning Post, Jan 30, 2017

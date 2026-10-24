@@ -21,7 +21,7 @@ Realistically, organisations may only be **using this data** for **descriptive**
 
 > *Diagram unavailable: Gartner's analytics maturity model, from descriptive and diagnostic analytics through to more advanced stages. Most finance teams sit at the descriptive and diagnostic stages. The original image has expired and needs to be re-uploaded.*
 
-There is a tacit awareness that digital transformation brings benefits. The question is, how much, and how do teams get there? Finite resources (manpower, funding, etc.) point towards competing needs within an organisation. Finance transformation leads need to thread intentionally and cautiously.
+There is a tacit awareness that digital transformation brings benefits. The question is, how much, and how do teams get there? Finite resources (manpower, funding, etc.) point towards competing needs within an organisation. Finance transformation leads need to tread intentionally and cautiously.
 
 ## What are the possibilities for finance teams?
 
@@ -33,7 +33,7 @@ The improvements finance teams can consider in the space of financial transforma
 
 Improve the time to report by adopting automation, reducing the need for manual actions and improving accuracy. For organisations with different accounting tools, a Finance Performance Management (FPM) tool like LucaNet, Jedox, and Anaplan helps with consolidation and ensures one source of truth (keeping data in one place).
 
-For smaller organisations, I recommend configuring reports within the tool itself. Alternatively, leverage on data teams to build in-house solutions using the data stack - data models (built with dbt) which are exposed to visualisation tools like Looker, Power BI, or Tableau. I remember how something simple like automating graphs for use in presentations was a big time-saver in one organisation.
+For smaller organisations, I recommend configuring reports within the tool itself. Alternatively, leverage data teams to build in-house solutions using the data stack - data models (built with dbt) which are exposed to visualisation tools like Looker, Power BI, or Tableau. I remember how something simple like automating graphs for use in presentations was a big time-saver in one organisation.
 
 In the subsequent and last section, I suggest some metrics to measure success.
 
@@ -41,7 +41,7 @@ In the subsequent and last section, I suggest some metrics to measure success.
 
 Create insights, and inform decisions using statistical methods or machine learning. Earlier I highlighted that finance teams play host to a substantial volume of data. These historical records can be used to understand seasonality, and trends, and inform future decisions.
 
-This data, when supplemented with other sources in the data warehouse, can be a powerful combination. This is where conversations about Cross-Planning and Analysis (XPA), a supplement to Financial Planning and Analysis come into play. For example, in a B2B or B2C setting - a combination of marketing, sales, and overhead costing could effectively inform producing pricing. The possibilities are vast.
+This data, when supplemented with other sources in the data warehouse, can be a powerful combination. This is where conversations about Cross-Planning and Analysis (XPA), a supplement to Financial Planning and Analysis come into play. For example, in a B2B or B2C setting - a combination of marketing, sales, and overhead costing could effectively inform product pricing. The possibilities are vast.
 
 In this regard, the Pareto Principle rings familiar: roughly 80% of consequences come from 20% of causes. Start with quick wins to build motivation and momentum with finance transformations.
 
@@ -54,13 +54,13 @@ Start the project by taking quantitative measurements. This is the part most tea
 
 Typically, I consider the volume of transactions to be consistent throughout the year. However, if the business is seasonal, adjust the metrics (1) and (3) accordingly.
 
-Metrics for value creation vary by the initiative. They typically involve increasing revenue, reducing cost, improving client experience, or improving internal efficiency. In one instance where I automated one of the month-end closing processes, we managed to half the amount of time spent by reducing manual work. This was 5 FTE days saved. Seeing quantifiable progress builds confidence.
+Metrics for value creation vary by the initiative. They typically involve increasing revenue, reducing cost, improving client experience, or improving internal efficiency. In one instance where I automated one of the month-end closing processes, we managed to halve the amount of time spent by reducing manual work. This was 5 FTE days saved. Seeing quantifiable progress builds confidence.
 
 ## How shall finance transformation leads continue winning mandates?
 
 Ensure that at every step, business objectives are being met. Be certain that all stakeholders recognise the impacts and benefits as well. Be mindful that ultimately, the aims of financial reporting with the [Conceptual Framework for Financial Reporting](https://www.iasplus.com/en/standards/other/framework) should be met. This means that the information should be relevant, faithfully represented, and timely amongst others.
 
-Reinforce that finance transformation is a journey. It is not a means to an end, but a process of *Kaizen* (continuous improvement). Build a roadmap where impacts are obvious. This will keep stakeholders excited and engaged. At the same time, there may be a tendency to want to be everything everywhere all at once. There is a need to reign in and prioritise competing needs.
+Reinforce that finance transformation is a journey. It is not a means to an end, but a process of *Kaizen* (continuous improvement). Build a roadmap where impacts are obvious. This will keep stakeholders excited and engaged. At the same time, there may be a tendency to want to be everything everywhere all at once. There is a need to rein in and prioritise competing needs.
 
 Building trust is important. Accenture’s report on future-ready finance reports that 27% of finance leaders say that [inconsistent, inaccurate or inaccessible data is preventing them from realising their full potential](https://www.accenture.com/us-en/insights/operations/future-ready-finance) as drivers of strategic change.
 
@@ -81,7 +81,7 @@ There is even a possibility to go further to use distributions of revenue or exp
 
 Acknowledging that finance transformation is an exercise of change management is essential. Consider too, that the persons undergoing this change have varied priorities. There are finance practitioners who are excited and ready to embrace change, but there are those who are resistant. At one point, the predominant chatter was about how [automation would replace accounting jobs](https://jgbc.fiu.edu/index.php/Home/article/download/233/182/#:~:text=According%20to%20their%20findings%2C%20accountants,Jobs%20Susceptible%20to%20Automation.). In implementing finance transformation, I walked into many projects having to first establish that the change coming is an exciting opportunity to reduce laborious work which finance teams did not enjoy so that the upsides could be focused on.
 
-I find the ADKAR Change Management Model useful for considering how to approach the situation. To acknowledge hesitation or resistance, I found [Kübler Ross' Change Curve Model](https://www.taylorfrancis.com/books/mono/10.4324/9780203010495/death-dying-elisabeth-k%C3%BCbler-ross) to be a good way to approach the situation empathetically.
+I find the ADKAR Change Management Model useful for considering how to approach the situation. To acknowledge hesitation or resistance, I found [Kübler-Ross's Change Curve Model](https://www.taylorfrancis.com/books/mono/10.4324/9780203010495/death-dying-elisabeth-k%C3%BCbler-ross) to be a good way to approach the situation empathetically.
 
 > *Diagram unavailable: the ADKAR change management model, used to plan how to support people through a change. The original image has expired and needs to be re-uploaded.*
 

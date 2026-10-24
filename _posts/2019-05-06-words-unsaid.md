@@ -9,7 +9,7 @@ In our first semester, we had a class [1] which required us to search and write 
 
 For our first 'TechTalk' submission, I selected an article on Metcalfe's Law and network effects with respect to Bitcoin. Much to my amusement, I was selected to share this with the class – despite having little idea on what the article was *trying* to say. I had to speak for three minutes about something I knew close to nothing about. Indeed, *smoking* [2] is an art.
 
-Perhaps the first 'TechTalk' incident was a pre-cursor to what would follow in the rest of my days as a undergraduate. Somehow, I spend a lot of time questioning if I know what I am doing. Many of us do this too. In some sense, I guess not; the more you know, the less you *really* do.
+Perhaps the first 'TechTalk' incident was a pre-cursor to what would follow in the rest of my days as an undergraduate. Somehow, I spend a lot of time questioning if I know what I am doing. Many of us do this too. In some sense, I guess not; the more you know, the less you *really* do.
 
 Everything is better with the benefit of hindsight.
 
@@ -50,7 +50,7 @@ Our much-revered Financial Reporting Standards change from time to time; what we
 
 I believe the utility of business school is a propagation of the network effect – a community for you to enter the workforce with, and a group of people you can count on. This is especially important in a business environment where relationships ("关系") are valued. Business school is a perfect platform to know more people on a genuine level before entering the competitive world out there.
 
-Build bridges, not burn them. There is little value in sacrificing a long-term relationship for something temporal and largely inconsequential in the long-run.
+Build bridges, don't burn them. There is little value in sacrificing a long-term relationship for something temporary and largely inconsequential in the long-run.
 
 ## 4. Permanent Interests
 
@@ -64,7 +64,7 @@ For example, the school has an interest to defend its reputation, and will emplo
 
 Many of us would have also encountered people who are transactional – i.e. they approach you when they need something from you and ignore you when they do not. Again – network effects; these people are connections to acknowledge but will, sadly, remain solely functional. Know the difference.
 
-Nevertheless, be kind, be helpful. For those of us who would go the extra mile for someone without an agenda, remember to guard yourself – not everyone would the same for you. Also, not everyone values your advice as much as you value them [4].
+Nevertheless, be kind, be helpful. For those of us who would go the extra mile for someone without an agenda, remember to guard yourself – not everyone would do the same for you. Also, not everyone values your advice as much as you value them [4].
 
 Always remember to look out for yourself and be thankful for the few in your life who look out for you.
 
@@ -100,4 +100,4 @@ Thank you, NTU, and the people who have made the school and this journey rich an
 
 [3] I had the opportunity to receive some feedback from A/P Tan, and his thoughts resonated with my experiences – the key is to be honest and demonstrate that you are able to deliver solutions either by virtue of your skills or experiences.
 
-[4] This was one my friend's ten reflection points on university life, which I inserted here.
+[4] This was one of my friend's ten reflection points on university life, which I inserted here.

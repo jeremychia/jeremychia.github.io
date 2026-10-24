@@ -1,12 +1,12 @@
 title: Jeremy Chia
-description: "Analytics Engineer & Chartered Accountant. Building data systems for finance teams."
+description: "Analytics Engineer & accountant (CGMA). Building data systems for finance teams."
 logo: /assets/images/anime_character_kitti_ai.png
 baseurl: jeremychia
 url: https://jeremychia.github.io
 
 author:
   name: "Jeremy Chia"
-  bio: "Senior Analytics Engineer @ Vinted | Chartered Accountant | Berlin"
+  bio: "Senior Analytics Engineer @ Vinted | CGMA | Berlin"
 
 collections:
   projects:

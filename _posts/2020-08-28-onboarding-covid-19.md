@@ -5,7 +5,7 @@ image: '/assets/images/posts/onboarding-covid19.png'
 category: reflections
 ---
 
-A few weeks ago, I attended a virtual catch-up with Quantic MBA participants based in Singapore. During our breakout sessions, some of us related to starting new roles midst the COVID-19 pandemic. We shared some laughs over each other's unconventional onboarding experience - owed to prevailing social distancing measures, our onboarding sessions were virtual. The experience was characterised by a flurry of calls over Teams, virtual meetings and introductions. The norm of welcome lunches, introductory tours and in-person interactions were sorely missed. Nevertheless, this was an experience to remember.
+A few weeks ago, I attended a virtual catch-up with Quantic MBA participants based in Singapore. During our breakout sessions, some of us related to starting new roles amid the COVID-19 pandemic. We shared some laughs over each other's unconventional onboarding experience - owed to prevailing social distancing measures, our onboarding sessions were virtual. The experience was characterised by a flurry of calls over Teams, virtual meetings and introductions. The norm of welcome lunches, introductory tours and in-person interactions were sorely missed. Nevertheless, this was an experience to remember.
 
 My onboarding began amidst Singapore's Circuit Breaker; or in other words, a lockdown. Just a few months ago, only essential trips out of the house were permitted. This called for adaptation and a revamp of the entire onboarding programme. Kudos to my colleagues for planning the activities; they responded to the evolving situation to deliver an outstanding onboarding experience. Considering that the original plan of being onboarded at our head office in Berlin was shelved owed to the border restrictions, I'm especially appreciative that the programme came together nicely to emulate the experience as far as possible. The effort they have put into ensuring a smooth onboarding journey made me feel especially welcomed, despite us having to connect over the screen. Many favourable elements of a physical onboarding were substituted with virtual alternatives.
 
@@ -27,9 +27,9 @@ We will be missing out on our customary gatherings (LucaNet.World – our annual
 
 ### 3. Virtual Social Interactions
 
-In the first few weeks, our team socialised through **virtual 'happy hours'** to cap off the work week. I found it a good substitute for what otherwise would have been social talk over lunch. This was a good platform for informal conversations and *get-to-know-you*s. I see immense value in this. We spend at least at least 35% of our waking hours with our team. Getting comfortable with the team and building on a positive working relationship is beneficial, and arguably spurs productivity.
+In the first few weeks, our team socialised through **virtual 'happy hours'** to cap off the work week. I found it a good substitute for what otherwise would have been social talk over lunch. This was a good platform for informal conversations and *get-to-know-you*s. I see immense value in this. We spend at least 35% of our waking hours with our team. Getting comfortable with the team and building on a positive working relationship is beneficial, and arguably spurs productivity.
 
-Aside to the Teams meetings, I'm glad to have interacted with other LucaNet staff on LinkedIn. They've sent their well wishes and lent their support to through 'likes' or comments on each other's posts. A simple act of – "welcome to the LN family" to a fellow colleague goes a long way. This perhaps mimics that of verbal affirmation. Happy to be part of a supportive team.
+Aside from the Teams meetings, I'm glad to have interacted with other LucaNet staff on LinkedIn. They've sent their well wishes and lent their support through 'likes' or comments on each other's posts. A simple act of – "welcome to the LN family" to a fellow colleague goes a long way. This perhaps mimics that of verbal affirmation. Happy to be part of a supportive team.
 
 ### Keeping the Momentum Going Strong
 

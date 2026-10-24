@@ -15,7 +15,7 @@ A three-part pipeline to scrape, model, and visualise Singapore's parliamentary 
 
 - **[Data Extraction](https://www.github.com/jeremychia/singapore-parliament-speeches)** — Python scraper against the Parliament Reports Search (SPRS) API
 - **[Data Transformation](https://www.github.com/jeremychia/singapore-parliament-speeches-dbt)** — dbt models for cleaning and structuring the data
-- **[Data Visualisation](https://www.github.com/jeremychia/singapore-parliament-speeches-streamlit)** — Streamlit dashboard for exploration
+- **Data Visualisation** — Streamlit dashboard for exploration, live at [Par-leh-Mate](https://parlehmate.onrender.com/)
 
 ## What It Collects
 

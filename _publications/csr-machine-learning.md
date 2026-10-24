@@ -17,7 +17,7 @@ Using machine learning to predict the relationship between ESG scores and corpor
 
 Corporate Social Responsibility (CSR) has long been discussed since the 1950s. This long-debated topic of adopting CSR often draws divided conclusions due to the fact that the reward for investing in CSR practice is often delayed and unquantifiable.
 
-We constructed machine learning models to examine the relationship between ESG (Environmental, Social and Governance) scores and the firm's ROE (Return of Equity).
+We constructed machine learning models to examine the relationship between ESG (Environmental, Social and Governance) scores and the firm's ROE (Return on Equity).
 
 ## Models Built
 

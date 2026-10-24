@@ -29,7 +29,7 @@ If you're curious to know - the relatively easier course to enter with a higher 
 
 **What About the Rest of Us?**
 
-While there isn't a clear trend, it seems like Business and Electrical Engineering comes out pretty well. Architecture students fair well too. However, it is worth noting that these figures reflect the performance of 2016's cohort, as Architecture students are only surveyed after completing three-years of practical training. It is worth noting that the median could potentially be higher because of the number of students who go into Finance and Analytics roles, which typically pay higher.
+While there isn't a clear trend, it seems like Business and Electrical Engineering comes out pretty well. Architecture students fare well too. However, it is worth noting that these figures reflect the performance of 2016's cohort, as Architecture students are only surveyed after completing three-years of practical training. It is worth noting that the median could potentially be higher because of the number of students who go into Finance and Analytics roles, which typically pay higher.
 
 **Accountancy & Business: NTU v NUS v SMU**
 
