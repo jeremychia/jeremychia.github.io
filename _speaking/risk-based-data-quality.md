@@ -13,7 +13,7 @@ tags:
 
 Running every data test on every run sounds safe. In practice it means constant alerts, missed deadlines and a team that stops trusting its own alarms. At Vinted, we sorted our finance pipeline tests by business impact and how often they fail, then ran each group differently. The idea comes from materiality, a concept from accounting.
 
-I gave this talk at [Data Makers Fest 2026](https://www.datamakersfest.com/speakers) in Porto and at Forward Data Conference. The Vinted Engineering write-up is co-authored with Justina Šakalytė.
+I gave this talk with my colleague Justina Šakalytė at Forward Data Conference, and again at [Data Makers Fest 2026](https://www.datamakersfest.com/speakers) in Porto. We also wrote it up together for Vinted Engineering.
 
 ## The Problem
 
