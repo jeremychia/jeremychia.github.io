@@ -2,6 +2,7 @@
 layout: project
 title: Singapore Parliament Speeches
 image: "/assets/images/projects/parlehmate.png"
+image_alt: The Member Metrics page of Par-leh-Mate, a bubble chart of questions and speeches per sitting for each MP, coloured by party
 category: Data Pipeline
 featured: true
 tags:
