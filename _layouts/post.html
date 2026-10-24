@@ -6,8 +6,8 @@ layout: default
   <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
     <div class="pb-4">
       <a href="{{ '/category/' | append: page.categories[0] | replace: ' ', '-' | downcase | relative_url }}"
-        class="no-underline font-mulish text-sm hover:text-sky-400 text-gray-500">
-        {{ page.categories[0] | upcase }}
+        class="venue-pill">
+        {{ page.categories[0] }}
       </a>
     </div>
     <h1 class="text-left text-2xl font-bold md:text-5xl text-black">{{page.title}}</h1>

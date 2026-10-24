@@ -3,11 +3,9 @@
     {% if include.item.image %}
     <img src="{{include.item.image | relative_url}}" alt="{{include.item.title}}" class="object-cover w-full h-48 rounded" />
     {% endif %}
-    {% if include.item.venues %}
-    <p class="venue-pills {% if include.item.image %}mt-4{% endif %} mb-2">{% for v in include.item.venues %}<span class="venue-pill">{{ v }}</span>{% endfor %}</p>
-    {% else %}
-    <p class="font-mulish text-gray-500 {% if include.item.image %}mt-4{% endif %} mb-2 text-sm">{{include.item.category | default: include.item.venue | upcase}}</p>
-    {% endif %}
+    {% assign pills = include.item.venues %}
+    {% unless pills %}{% assign single = include.item.category | default: include.item.venue %}{% endunless %}
+    <p class="venue-pills {% if include.item.image %}mt-4{% endif %} mb-2">{% if pills %}{% for v in pills %}<span class="venue-pill">{{ v }}</span>{% endfor %}{% elsif single %}<span class="venue-pill">{{ single }}</span>{% endif %}</p>
     {% assign card_h = include.heading | default: "h2" %}<{{ card_h }} class="text-xl hover:underline font-bold my-2 text-gray-800 line-clamp-2">{{include.item.title}}</{{ card_h }}>
     <div class="font-mulish text-sm text-gray-600 line-clamp-2 flex-grow excerpt">
       {{include.item.excerpt}}
